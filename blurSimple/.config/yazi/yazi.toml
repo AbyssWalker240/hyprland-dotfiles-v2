@@ -1,0 +1,32 @@
+[mgr]
+ratio = [ 1, 3, 3 ]
+
+[preview]
+max_width = 1500
+
+[opener]
+edit = [
+	{ run = 'micro "$@"', desc = 'micro', block = true, for = "unix" },
+	{ run = 'kitty -e micro $@', desc = 'micro (New Terminal)', block = false, for = "unix" },
+]
+openimg = [
+	{ run = 'qimgv "$@"', desc = 'qimgv', block = false, for = "unix" },
+	{ run = 'gwenview "$@"', desc = 'gwenview', block = false, for = "unix" },
+	{ run = 'krita "$@"', desc = 'krita', block = false, for = "unix" },
+]
+openpdf = [
+	{ run = 'firefox "$@"', desc = 'firefox pdf', block = false, for = "unix" },
+]
+openmulti = [
+	{ run = 'vlc "$@"', desc = 'vlc', block = false, for = "unix" },
+	{ run = 'ffplay "$@"', desc = 'ffplay', block = false, for = "unix" }
+]
+
+[open]
+rules = [
+	{ mime = "image/*", use = [ "openimg" ] },
+	{ mime = "text/*", use = [ "edit" ] },
+	{ mime = "application/pdf", use = [ "openpdf" ] },
+	{ mime = "audio/*", use = [ "openmulti" ] },
+	{ mime = "video/*", use = [ "openmulti" ] }
+]

@@ -1,0 +1,57 @@
+* {
+    border: none;
+    font-family: 'Ubuntu';
+    font-size: 16px;
+}
+
+window#waybar {
+    background: rgba(0,0,0,0.7);
+    color: #81a2be;
+}
+
+tooltip {
+	background: rgba(0,0,0,.8);
+	border: 2px solid rgba(170,170,170,0.9);
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background: transparent;
+    color: #5f819d;
+    border-bottom: 3px solid transparent;
+}
+
+#workspaces button.active {
+    border-bottom: 3px solid #c5c8c6;
+    color: #81a2be;
+}
+
+#workspaces button.urgent {
+    border-bottom: 3px solid #cc6666;
+}
+
+#workspaces button:hover {
+    background: #373b41;
+}
+
+#mode, #clock, #battery { 
+    padding: 0 10px;
+}
+
+#custom-networkmenu, #custom-wallpaperswap {
+	padding: 0 10px;
+}
+
+#custom-nowplaying-title {
+    padding: 0 0 0 200px;
+}
+
+#custom-nowplaying-separator {
+    padding: 0px;
+    color: #5f819d;
+}
+
+#custom-nowplaying-artist {
+    padding: 0px;
+    color: #5f819d;
+}

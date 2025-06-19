@@ -1,0 +1,1 @@
+fastfetch --logo-type kitty -l "/home/rosetta/Pictures/tansparent-archchan.png" --logo-height 18 --separator " ➤ " --title-color-user blue --title-color-at bright_yellow --title-color-host blue --color-keys blue --color-separator bright_blue
