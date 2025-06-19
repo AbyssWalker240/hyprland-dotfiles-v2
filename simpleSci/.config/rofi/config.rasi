@@ -1,0 +1,13 @@
+configuration {
+	font: "Ubuntu 16";
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+  filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+  }
+}
+
+@theme "/home/rosetta/.config/rofi/themes/hyprsubaru.rasi"
