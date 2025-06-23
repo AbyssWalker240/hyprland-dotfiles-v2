@@ -4,3 +4,6 @@ theme = "base16_transparent"
 insert = "bar"
 normal = "underline"
 select = "block"
+
+[editor.file-picker]
+hidden = false

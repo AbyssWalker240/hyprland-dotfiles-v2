@@ -20,7 +20,7 @@
     },
     "custom/wallpaperswap": {
 	    "format": "Wallpaper",
-	    "on-click": "~/.local/bin/cyclewall",
+	    "on-click": "~/.config/waybar/scripts/cyclewall",
 	    "tooltip":false,
 	    "tooltip-format":"Cycle Wallpaper"
     },

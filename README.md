@@ -36,7 +36,6 @@ Packages that I use, plus all packages included in the stow packages
 * gwenview
 * helix
 * hyprland
-* hyprpaper (not preferred, I just don't feel like putting effort into switching right now)
 * hyprshot
 * impala
 * jrnl
@@ -50,6 +49,7 @@ Packages that I use, plus all packages included in the stow packages
 * rofi-wayland
 * rsync
 * stow
+* swaybg
 * tree
 * ttf-ubuntu-font-family
 * waybar
