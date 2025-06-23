@@ -38,6 +38,8 @@ alias fastfetch="\clear && echo && fastfetch"
 alias smallfetch="fastfetch --config ~/config/fastfetch/config-small.jsonc"
 alias snapstreaks="\clear && echo && richdate && figlet S -f git/figlet-fonts/3d | lolcat && echo"
 
+alias rm="rm -v"
+
 alias lt="tree -L 1"
 alias tree1="tree -L 1"
 alias tree2="tree -L 2"
