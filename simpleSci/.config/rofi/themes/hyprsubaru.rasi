@@ -18,10 +18,10 @@
     alternate-normal-foreground: var(foreground);
     urgent-background:           var(background);
     selected-normal-foreground:  var(lightbg);
-    active-foreground:           var(blue);
-    selected-active-background:  var(blue);
-    active-background:           var(background);
-    selected-normal-background:  var(lightfg);
+    active-foreground:           #7dcfff;
+    selected-active-background:  #7dcfff;
+    active-background:           var(normal-background);
+    selected-normal-background:  #5ed4c2;
     alternate-normal-background: rgba (0, 0, 0, 0 %);
     selected-urgent-foreground:  var(background);
     normal-foreground:           var(foreground);

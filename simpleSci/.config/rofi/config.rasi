@@ -10,4 +10,4 @@ configuration {
   }
 }
 
-@theme "/home/rosetta/.config/rofi/themes/hyprsubaru.rasi"
+@theme "hyprsubaru.rasi"

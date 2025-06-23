@@ -1,5 +1,8 @@
 theme = "base16_transparent"
 
+[editor]
+auto-pairs = false
+
 [editor.cursor-shape]
 insert = "bar"
 normal = "underline"
