@@ -45,6 +45,8 @@ alias tree1="tree -L 1"
 alias tree2="tree -L 2"
 alias tree3="tree -L 3"
 
+alias glow="glow -t"
+
 # zoxide init
 eval "$(zoxide init zsh)"
 eval "$(fzf --zsh)"
