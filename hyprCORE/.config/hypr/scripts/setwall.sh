@@ -2,4 +2,4 @@
 
 sleep 2
 
-$HOME/.local/bin/cyclewall -n
+$HOME/.config/waybar/scripts/cyclewall -n
