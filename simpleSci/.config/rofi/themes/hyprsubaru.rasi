@@ -85,8 +85,8 @@ element-icon {
 window {
     padding:          10;
     background-color: var(background);
-    border:           1;
-    border-color:     var(separatorcolor);
+    border:           2;
+    border-color:     #3c4260;
     border-radius:    5;
     width: 750px;
     height: 560px;
