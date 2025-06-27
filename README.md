@@ -4,7 +4,7 @@ My personal hyprland dotfiles, organized for use with stow
 ## todo
 
 * [x] I use arch btw
-* [ ] Fragment .zshrc into .zshrc (which houses alias and other core functions) and then a .zshprompt file, which is used for styling only
+* [x] Fragment .zshrc into .zshrc (which houses alias and other core functions) and then a .zshprompt file, which is used for styling only
 * [ ] McDonalds style rice
 * [ ] Install script
 
