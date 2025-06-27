@@ -16,11 +16,7 @@ plugins=(git git-prompt)
 
 source $ZSH/oh-my-zsh.sh
 
-PROMPT=$'%F{8}\U250c\U2574%f%B%F{15}%n%f%b %F{0}%1~%f
-%F{8}\U2514\U2574%f%(?.%F{227}\U276f%f%F{191}\U276f%f%F{154}\U276f%f.%F{227}\U276f%f%F{214}\U276f%f%F{202}\U276f%f)  '
-
-#  OLD PROMPT
-# PROMPT="%B%F{012}%n%f%b %F{004}%1~%f %(?.%F{227}❯%f%F{191}❯%f%F{154}❯%f.%F{227}❯%f%F{214}❯%f%F{202}❯%f)  "
+source $HOME/.zsh_prompt
 
 alias cls="clear"
 alias home="z ~"
