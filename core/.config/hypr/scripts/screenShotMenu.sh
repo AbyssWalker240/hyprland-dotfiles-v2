@@ -4,7 +4,7 @@ OUTDIR=$HOME/Pictures/hyprshots
 
 selection=$(echo "Entire Screen
 Window
-Region" | rofi -dmenu -i -p "power" -lines 4)
+Region" | rofi -dmenu -i -p "screenshot" -lines 4)
 
 if [[ $selection == "Entire Screen" ]]; then
 	hyprshot -m output -t 3000 -o $OUTDIR
