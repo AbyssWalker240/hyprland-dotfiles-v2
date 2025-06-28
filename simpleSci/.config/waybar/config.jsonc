@@ -4,7 +4,7 @@
     "height": 32,
     "modules-left": ["hyprland/workspaces","custom/nowplaying-title","custom/nowplaying-separator","custom/nowplaying-artist"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["custom/wallpaperswap","custom/networkmenu","clock"],
+    "modules-right": ["custom/networkmenu","clock"],
 
     "hyprland/window": {
         "max-length": 200
