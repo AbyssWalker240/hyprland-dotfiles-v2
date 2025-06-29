@@ -1,2 +1,4 @@
 PROMPT=$'%F{8}\U250c\U2574%f%B%F{15}%n%f%b %F{0}%1~%f
 %F{8}\U2514\U2574%f%(?.%F{227}\U276f%f%F{191}\U276f%f%F{154}\U276f%f.%F{227}\U276f%f%F{214}\U276f%f%F{202}\U276f%f)  '
+
+$HOME/.config/waybar/scripts/cyclewall -n &> /dev/null
