@@ -3,10 +3,9 @@ My personal hyprland dotfiles, organized for use with stow
 
 ## todo
 
-* [x] I use arch btw
-* [x] Fragment .zshrc into .zshrc (which houses alias and other core functions) and then a .zshprompt file, which is used for styling only
 * [ ] McDonalds style rice
 * [ ] Install script
+* [ ] Rofi menu for switching between themes that automatically handles reloading where possible
 
 ## instructions
 1) Install all necessary packages (hyprland, rofi, yazi, etc)
