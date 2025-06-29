@@ -16,8 +16,8 @@
     width = (150, 600)
     height = (0, 300)
 
-    origin = bottom-right
-    offset = (10, 10)
+    origin = top-right
+    offset = (50, 50)
 
     scale = 0
 
