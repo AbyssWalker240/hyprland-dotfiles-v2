@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+pkgs="$(ls $HOME/.local/share/dotswap)"
+
+echo "$pkgs"
