@@ -6,10 +6,10 @@ max_width = 1500
 
 [opener]
 edit = [
-	{ run = 'micro "$@"', desc = 'micro', block = true, for = "unix" },
 	{ run = 'helix "$@"', desc = 'helix', block = true, for = "unix" },
-	{ run = 'kitty -e micro $@', desc = 'micro (New Terminal)', block = false, for = "unix" },
+	{ run = 'micro "$@"', desc = 'micro', block = true, for = "unix" },
 	{ run = 'kitty -e helix $@', desc = 'helix (New Terminal)', block = false, for = "unix" },
+	{ run = 'kitty -e micro $@', desc = 'micro (New Terminal)', block = false, for = "unix" },
 ]
 openimg = [
 	{ run = 'qimgv "$@"', desc = 'qimgv', block = false, for = "unix" },

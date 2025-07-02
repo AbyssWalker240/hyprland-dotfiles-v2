@@ -6,6 +6,7 @@ My personal hyprland dotfiles, organized for use with stow
 * [ ] McDonalds style rice
 * [ ] Install script
 * [ ] Rofi menu for switching between themes that automatically handles reloading where possible
+* [x] Move yazi to core package and make helix the default text editor
 
 ## instructions
 1) Install all necessary packages (hyprland, rofi, yazi, etc)
