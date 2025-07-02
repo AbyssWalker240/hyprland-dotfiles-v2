@@ -5,7 +5,7 @@ selection=$(echo "Sleep
 Log out
 Reboot
 Shutdown
-Shutdown Now" | rofi -dmenu -i -p "power" -lines 4 -theme /home/rosetta/.config/rofi/themes/hyprpwrm.rasi)
+Shutdown Now" | rofi -dmenu -i -p "power" -lines 4 -theme $HOME/.config/rofi/themes/hyprpwrm.rasi)
 
 if [[ $selection == "Shutdown" ]]; then
 	shutdown +2
@@ -15,7 +15,7 @@ elif [[ $selection == "Reboot" ]]; then
 elif [[ $selection == "Shutdown Now" ]]; then
 	shutdown now
 elif [[ $selection == "Log out" ]]; then
-	loginctl terminate-user rosetta
+	loginctl terminate-user $USER
 elif [[ $selection == "Sleep" ]]; then
 	systemctl suspend
 else
