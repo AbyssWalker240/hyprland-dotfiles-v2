@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-STOWDIR="$HOME/Dotfiles"   # may change when repo is cloned under a different name
+STOWDIR="$HOME/$1"   # Takes the dotfiles directory name
+                     # (which contains stow packages) as the first argument
 STOWTARGET="$HOME"
 COREPKG="core"
 RELOADSCRIPT="$HOME/.config/hypr/scripts/reload.sh"
