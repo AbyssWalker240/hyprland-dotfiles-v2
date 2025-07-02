@@ -2,4 +2,4 @@
 
 sleep 2
 
-$HOME/.config/waybar/scripts/cyclewall -n
+$HOME/.config/hypr/scripts/cyclewall.py -n

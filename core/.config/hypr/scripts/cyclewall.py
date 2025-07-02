@@ -12,6 +12,7 @@ if(len(sys.argv) > 1):
 
 #  Get list of files in wallpaper directory and count them
 pathList = os.listdir("/home/rosetta/Pictures/Wallpapers")
+pathList.sort()
 
 amount = 0
 for i in pathList:
