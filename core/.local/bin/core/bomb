@@ -1,0 +1,19 @@
+#!/bin/python
+
+import argparse
+import random
+
+
+
+parser = argparse.ArgumentParser(description="Mad? Bomb them.")
+parser.add_argument("target", type=str, help="Who/what are you mad at?", nargs="+")
+args = parser.parse_args()
+
+target = " ".join(args.target)
+
+
+intros = ["Dropping a bomb on","Bombing","Flying a plane into","Exploding","Commiting an act of terrorism against"]
+intro = intros[random.randint(0,4)]
+
+
+print(f"\n{intro} {target}\n")

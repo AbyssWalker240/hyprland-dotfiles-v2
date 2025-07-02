@@ -9,7 +9,7 @@ RELOADSCRIPT="$HOME/.config/hypr/scripts/reload.sh"
 pkglist="$(ls -d $STOWDIR/*/ | awk -F/ '{print $(NF-1)}' | grep -v ^$COREPKG$)"
   # get all packages formatted without / or leading directories, excluding core
 
-selection="$(echo "$pkglist" | rofi -dmenu -p "visual package" \
+selection="$(echo "$pkglist" | rofi -dmenu -i -p "visual package" \
   -theme $HOME/.config/rofi/themes/hyprmed.rasi 2> /dev/null)"
 
 [[ -z "$selection" ]] && echo -e "\e[1;91mNo selection\e[0m, exiting..." && exit 0

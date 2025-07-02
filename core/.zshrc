@@ -58,6 +58,6 @@ alias dfh="distorage"
 
 
 
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.local/bin/core:$PATH"
 export EDITOR="/usr/bin/helix"
 export PAGER="/usr/bin/bat --paging=always"
