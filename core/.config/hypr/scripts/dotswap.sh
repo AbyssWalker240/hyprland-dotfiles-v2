@@ -6,17 +6,17 @@ STOWTARGET="$HOME"
 COREPKG="core"
 RELOADSCRIPT="$HOME/.config/hypr/scripts/reload.sh"
 
-PKGLIST="$(ls -d $STOWDIR/*/ | awk -F/ '{print $(NF-1)}' | grep -v ^$COREPKG$)"
+pkglist="$(ls -d $STOWDIR/*/ | awk -F/ '{print $(NF-1)}' | grep -v ^$COREPKG$)"
   # get all packages formatted without / or leading directories, excluding core
 
-selection="$(echo "$PKGLIST" | rofi -dmenu -p "Dotfile packages" 2> /dev/null)"
+selection="$(echo "$pkglist" | rofi -dmenu -p "Dotfile packages" 2> /dev/null)"
 
 [[ -z "$selection" ]] && echo -e "\e[1;91mNo selection\e[0m, exiting..." && exit 0
 
 echo -e "\e[1;92m${selection} \e[0mHas been selected, switching now..."
 
 
-for pkg in $PKGLIST; do
+for pkg in $pkglist; do
   # unstow all packages to ensure nothing gets stowed twice
   # (also acts as restow if necesary)
   stow --dir $STOWDIR --target $STOWTARGET --delete ${pkg}
