@@ -23,11 +23,23 @@
       }
     },
     "break",
-    "os",
-    "kernel",
+    {
+      "type": "os",
+      "format": "{2}"
+    },
+    {
+      "type": "wm",
+      "format": "{1}"
+    },
+    {
+      "type": "shell",
+      "format": "{1}"
+    },
     "uptime",
-    "packages",
-    "shell",
+    {
+      "type": "packages",
+      "format": "{2}"
+    },
     "break",
     {
       "type":"colors",
