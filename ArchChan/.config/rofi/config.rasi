@@ -1,5 +1,6 @@
 configuration {
 	font: "Ubuntu 16";
+	modes: "drun,run,window,emoji";
   timeout {
       action: "kb-cancel";
       delay:  0;

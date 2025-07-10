@@ -35,6 +35,7 @@ Packages that I use, plus all packages included in the stow packages
 * discord
 * dunst
 * fastfetch
+* ffmpeg
 * figlet
 * firefox
 * flatpak
