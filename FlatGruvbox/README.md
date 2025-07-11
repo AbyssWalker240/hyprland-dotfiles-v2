@@ -8,8 +8,9 @@ no distractions remember?
 
 # WIP
 
+* [ ] fastfetch
 * [ ] rofi
 * [ ] dunst
 * [x] hyprstyle
-* [ ] zsh prompt
-* [ ] waybar
+* [x] zsh prompt
+* [x] waybar

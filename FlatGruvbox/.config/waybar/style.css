@@ -6,7 +6,7 @@
 
 window#waybar {
     background: rgba(0,0,0,0);
-    color: #a9b1d6;
+    color: #d5c5a1; /* fg2 */
 }
 
 tooltip {
@@ -18,21 +18,22 @@ tooltip {
     padding: 0 5px;
     background: transparent;
     border-bottom: 3px solid transparent;
-    color: #a9b1d6;
+    color: #d5c5a1; /* fg2 */
 }
 
 #workspaces button.active {
-    border-bottom: 3px solid #5ed4c2;
-    color: #5ed4c2;
+    border-bottom: 3px solid #b8bb26;
+    color: #b8bb26;
 }
 
 #workspaces button.urgent {
-    border-bottom: 3px solid #f55a77;
-    color: #f55a77;
+    border-bottom: 3px solid #fb4934;
+    color: #fb4934;
 }
 
 #workspaces button:hover {
-    background: #1a1b26;
+    background: #282828; /* bg */
+    color: #fe8019;
 }
 
 #mode, #clock, #battery { 
@@ -49,10 +50,10 @@ tooltip {
 
 #custom-nowplaying-separator {
     padding: 0px;
-    color: #626c9c;
+    color: #7c6f64; /* bg4 */
 }
 
 #custom-nowplaying-artist {
     padding: 0px;
-    color: #626a7a;
+    color: #7c6f64; /* bg4 */
 }
