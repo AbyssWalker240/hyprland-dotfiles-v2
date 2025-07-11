@@ -20,7 +20,7 @@
     },
     "custom/wallpaperswap": {
 	    "format": "Wallpaper",
-	    "on-click": "~/.config/hypr/scripts/cyclewall.py",
+	    "on-click": "~/.config/hypr/scripts/cyclewallv2.sh",
 	    "tooltip":false,
 	    "tooltip-format":"Cycle Wallpaper"
     },

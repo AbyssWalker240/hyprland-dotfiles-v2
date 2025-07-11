@@ -58,6 +58,7 @@ Packages that I use, plus all packages included in the stow packages
 * rofi-wayland
 * rsync
 * stow
+* swww
 * tree
 * ttf-ubuntu-font-family
 * waybar

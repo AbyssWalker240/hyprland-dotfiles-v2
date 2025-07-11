@@ -4,7 +4,7 @@
     "height": 32,
     "modules-left": ["hyprland/workspaces","custom/nowplaying-title","custom/nowplaying-separator","custom/nowplaying-artist"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["custom/networkmenu","clock"],
+    "modules-right": ["clock"],
 
     "hyprland/window": {
         "max-length": 200
@@ -20,7 +20,7 @@
     },
     "custom/wallpaperswap": {
 	    "format": "Wallpaper",
-	    "on-click": "~/.config/hypr/scripts/cyclewall.py",
+	    "on-click": "~/.config/hypr/scripts/cyclewallv2.sh",
 	    "tooltip":false,
 	    "tooltip-format":"Cycle Wallpaper"
     },
