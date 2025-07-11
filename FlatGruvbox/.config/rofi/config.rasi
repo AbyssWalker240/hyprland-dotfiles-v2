@@ -1,0 +1,14 @@
+configuration {
+	font: "Ubuntu 16";
+	modes: "drun,run,window,emoji";
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+  filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+  }
+}
+
+@theme "hyprsubaru.rasi"
