@@ -40,7 +40,7 @@
     progress_bar_corner_radius = 0
     progress_bar_corners = all
 
-    icon_corner_radius = 5
+    icon_corner_radius = 0
     icon_corners = all
 
     # The transparency of the window.  Range: [0; 100].
@@ -58,11 +58,11 @@
     text_icon_padding = 0
 
     frame_width = 2
-    frame_color = "#3c4260"
+    frame_color = "#504945"
 
     gap_size = 0
 
-    separator_color = "#3c4260"
+    separator_color = "#504945"
     #  * auto: dunst tries to find a color fitting to the background;
     #  * foreground: use the same color as the foreground;
     #  * frame: use the same color as the frame;
@@ -173,7 +173,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 5
+    corner_radius = 0
 
     # Define which corners to round when drawing the window. If the corner radius
     # is set to 0 this option will be ignored.
@@ -243,24 +243,24 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#1a1b26"
-    foreground = "#a9b1d6"
+    background = "#282828"
+    foreground = "#ebdbb2"
     timeout = 4
     # Icon for notifications with low urgency
     default_icon = dialog-information
 
 [urgency_normal]
-    background = "#1a1b26"
-    foreground = "#a9b1d6"
+    background = "#282828"
+    foreground = "#ebdbb2"
     timeout = 4
     override_pause_level = 30
     # Icon for notifications with normal urgency
     default_icon = dialog-information
 
 [urgency_critical]
-    background = "#1a1b26"
-    foreground = "#c0caf5"
-    frame_color = "#f7768e"
+    background = "#282828"
+    foreground = "#ebdbb2"
+    frame_color = "#fb4934"
     timeout = 0
     override_pause_level = 60
     # Icon for notifications with critical urgency

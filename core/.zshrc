@@ -34,6 +34,7 @@ alias icat="kitty icat"
 alias fastfetch="\clear && echo && fastfetch"
 alias smallfetch="fastfetch --config ~/config/fastfetch/config-small.jsonc"
 alias snapstreaks="\clear && echo && richdate && figlet S -f git/figlet-fonts/3d | lolcat && echo"
+alias redunstify="killall dunst && dunstify"
 
 alias rm="rm -v"
 
