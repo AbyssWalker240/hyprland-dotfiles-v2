@@ -5,13 +5,13 @@
 }
 
 window#waybar {
-    background: rgba(0,0,0,0);
-    color: #d5c5a1; /* fg2 */
+    background: #1d2021;
+    color: #83a598;
 }
 
 tooltip {
-	background: rgba(0,0,0,.8);
-	border: 2px solid rgba(170,170,170,0.9);
+    background: rgba(0,0,0,.8);
+    border: 2px solid rgba(170,170,170,0.9);
 }
 
 #workspaces button {
@@ -38,14 +38,16 @@ tooltip {
 
 #mode, #clock, #battery { 
     padding: 0 10px;
+    color: #d5c5a1; /* fg2 */
 }
 
 #custom-networkmenu, #custom-wallpaperswap {
-	padding: 0 10px;
+    padding: 0 10px;
 }
 
 #custom-nowplaying-title {
     padding: 0 0 0 200px;
+    color: #d5c5a1; /* fg2 */
 }
 
 #custom-nowplaying-separator {
