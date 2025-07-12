@@ -9,7 +9,7 @@ inputbar {
     padding:    1px ;
     spacing:    0px ;
     text-color: var(normal-foreground);
-    children:   [ "prompt","textbox-prompt-colon","entry","num-filtered-rows","textbox-num-sep","num-rows","case-indicator" ];
+    children:   [ "prompt","textbox-prompt-colon","entry","case-indicator" ];
 }
 listview {
     scrollbar: false;

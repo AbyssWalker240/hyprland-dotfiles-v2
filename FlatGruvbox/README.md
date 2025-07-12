@@ -8,8 +8,8 @@ no distractions remember?
 
 # WIP
 
-* [ ] fastfetch
-* [ ] rofi
+* [x] fastfetch
+* [x] rofi
 * [ ] dunst
 * [x] hyprstyle
 * [x] zsh prompt

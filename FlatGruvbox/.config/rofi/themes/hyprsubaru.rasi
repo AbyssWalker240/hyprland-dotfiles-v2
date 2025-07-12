@@ -1,13 +1,13 @@
 * {
     red:                         rgba ( 220, 50, 47, 100 % );
     blue:                        rgba ( 38, 139, 210, 100 % );
-    foreground:                  #a9b1d6;
+    foreground:                  #ebdbb2;
     lightfg:                     rgba ( 95, 129, 157, 100 % );
-    background:                  #1a1b26;
+    background:                  #282828;
     lightbg:                     rgba ( 5, 5, 5, 80 % );
     selected-active-foreground:  var(background);
-    separatorcolor:              #a9b1d6;
-    urgent-foreground:           #f7768e;
+    separatorcolor:              #504945;
+    urgent-foreground:           #fb4934;
     alternate-urgent-background: var(lightbg);
     background-color:            transparent;
     border-color:                var(foreground);
@@ -18,11 +18,11 @@
     alternate-normal-foreground: var(foreground);
     urgent-background:           var(background);
     selected-normal-foreground:  var(lightbg);
-    active-foreground:           #7dcfff;
-    selected-active-background:  #7dcfff;
+    active-foreground:           #8ec07c;
+    selected-active-background:  #8ec07c;
     active-background:           var(normal-background);
-    selected-normal-background:  #5ed4c2;
-    alternate-normal-background: rgba (0, 0, 0, 0 %);
+    selected-normal-background:  #fe8019;
+    alternate-normal-background: #3c3836; /* bg1 */ 
     selected-urgent-foreground:  var(background);
     normal-foreground:           var(foreground);
     alternate-urgent-foreground: var(red);
@@ -86,8 +86,8 @@ window {
     padding:          10;
     background-color: var(background);
     border:           2;
-    border-color:     #3c4260;
-    border-radius:    5;
+    border-color:     var(separatorcolor);
+    border-radius:    0;
     width: 750px;
     height: 560px;
 }
@@ -105,7 +105,7 @@ textbox {
 }
 listview {
     padding:      5px 0px 0px ;
-    scrollbar:    true;
+    scrollbar:    false;
     border-color: var(separatorcolor);
     spacing:      0px ;
     fixed-height: 0;
@@ -133,16 +133,16 @@ button selected {
 }
 num-filtered-rows {
     expand:     false;
-    text-color: #414868;
+    text-color: var(separatorcolor);
 }
 num-rows {
     expand:     false;
-    text-color: #414868;
+    text-color: var(separatorcolor);
 }
 textbox-num-sep {
     expand:     false;
     str:        "/";
-    text-color: #414868;
+    text-color: var(separatorcolor);
 }
 inputbar {
     padding:    1px ;
@@ -155,7 +155,7 @@ case-indicator {
     text-color: var(normal-foreground);
 }
 entry {
-    text-color:        #c0caf5;
+    text-color:        #d65d0e;
     cursor:            text;
     spacing:           0;
     placeholder-color: #414868;
@@ -163,7 +163,7 @@ entry {
 }
 prompt {
     spacing:    0;
-    text-color: #5ed4c2;
+    text-color: #fe8019;
 }
 textbox-prompt-colon {
     margin:     0px 0.3000em 0.0000em 0.0000em ;

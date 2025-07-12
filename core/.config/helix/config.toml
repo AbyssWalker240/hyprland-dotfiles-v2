@@ -1,7 +1,9 @@
 theme = "subaru"
 
 [editor]
-auto-pairs = false
+
+[editor.auto-pairs]
+"{" = "}"
 
 [editor.cursor-shape]
 insert = "bar"
