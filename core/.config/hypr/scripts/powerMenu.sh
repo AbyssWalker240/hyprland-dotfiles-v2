@@ -5,7 +5,7 @@ selection=$(echo "Sleep
 Log out
 Reboot
 Shutdown
-Shutdown Now" | rofi -dmenu -i -p "power" -lines 4 -theme $HOME/.config/rofi/themes/hyprpwrm.rasi)
+Shutdown Now" | rofi -dmenu -i -p "power" -lines 4 -theme $HOME/.config/rofi/themes/hyprpwrm.rasi 2> /dev/null)
 
 if [[ $selection == "Shutdown" ]]; then
 	shutdown +2
@@ -20,5 +20,5 @@ elif [[ $selection == "Sleep" ]]; then
 	systemctl suspend
 else
 	shutdown -c
-	hyprctl dismissnotify
+	hyprctl dismissnotify &> /dev/null
 fi
