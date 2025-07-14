@@ -3,9 +3,9 @@ My personal hyprland dotfiles, organized for use with stow
 
 ## todo
 
-* [ ] Add detection for empty argument in dotswap.sh, which gives an error if the directory is not provided or if an invalid name is provided
 * [ ] McDonalds style rice
 * [ ] Install script
+* [x] Add detection for empty argument in dotswap.sh, which gives an error if the directory is not provided or if an invalid name is provided
 * [x] Rofi menu for switching between themes that automatically handles reloading where possible
 * [x] Move yazi to core package and make helix the default text editor
 

@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+[[ -z "$1" ]] && echo -e "\e[1;91mNo stow directory provided\e[0m, exiting..." && exit 1
+
 STOWDIR="$HOME/$1"   # Takes the dotfiles directory name
                      # (which contains stow packages) as the first argument
 STOWTARGET="$HOME"
