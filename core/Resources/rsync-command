@@ -1,0 +1,1 @@
+rsync -vaph --progress --exclude-from=/home/rosetta/.rsync_exclude /home/rosetta/ crucial/backups/rosetta.mmmdd-yy

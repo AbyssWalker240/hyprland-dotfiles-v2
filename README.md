@@ -3,6 +3,7 @@ My personal hyprland dotfiles, organized for use with stow
 
 ## todo
 
+* [ ] Motorcycle rice, gsx8r fetch image
 * [ ] McDonalds style rice
 * [ ] Install script
 * [x] Add detection for empty argument in dotswap.sh, which gives an error if the directory is not provided or if an invalid name is provided
