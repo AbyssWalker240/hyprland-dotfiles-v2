@@ -11,4 +11,6 @@ fi
 
 [[ -z "$selection" ]] && exit 1
 
-swww img -t center "$HOME/Pictures/Wallpapers/${selection}"
+swww img -t center \
+--transition-duration 1 --transition-fps 120 \
+"$HOME/Pictures/Wallpapers/${selection}"
