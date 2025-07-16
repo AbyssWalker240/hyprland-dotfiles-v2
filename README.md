@@ -11,7 +11,7 @@ My personal hyprland dotfiles, organized for use with stow
 
 ## instructions
 1) Install all necessary packages (hyprland, rofi, yazi, etc)
-2) git clone this repo into $HOME
+2) git clone this repo into $HOME, preferably as $HOME/Dotfiles/ as it will be the default in scripts
 3) Navigate into the repo directory, and stow the hyprCORE package, as well as one of the visual packages
 
 ## packages

@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
 
-[[ -z "$1" ]] && echo -e "\e[1;91mNo stow directory provided\e[0m, exiting..." && exit 1
+if [[ -z "$1" ]]; then
+  echo -e "\e[1;91mNo stow directory provided\e[0m, defaulting to '${HOME}/Dotfiles'..."
+  STOWDIR="$HOME/Dotfiles"
+else
+  STOWDIR="$HOME/$1"
+fi
+  # take stow directory as first argument, or default to 'Dotfiles" if none provided
 
-STOWDIR="$HOME/$1"   # Takes the dotfiles directory name
-                     # (which contains stow packages) as the first argument
 STOWTARGET="$HOME"
 COREPKG="core"
 RELOADSCRIPT="$HOME/.config/hypr/scripts/reload.sh"

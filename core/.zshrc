@@ -16,7 +16,11 @@ plugins=(git git-prompt)
 
 source $ZSH/oh-my-zsh.sh
 
-source $HOME/.zsh_prompt
+if [[ "$TERM" == "linux" || "$TERM" == "tmux-256color" ]]; then
+	source $HOME/.tty_prompt
+else
+	source $HOME/.zsh_prompt
+fi
 
 alias cls="clear"
 alias home="z ~"
@@ -35,6 +39,7 @@ alias fastfetch="\clear && echo && fastfetch"
 alias smallfetch="fastfetch --config ~/config/fastfetch/config-small.jsonc"
 alias snapstreaks="\clear && echo && richdate && figlet S -f git/figlet-fonts/3d | lolcat && echo"
 alias redunstify="killall dunst && dunstify"
+alias resource="source $HOME/.zshrc"
 
 alias rm="rm -v"
 
