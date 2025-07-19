@@ -11,14 +11,17 @@ My personal hyprland dotfiles, organized for use with stow
 * [x] Move yazi to core package and make helix the default text editor
 
 ## instructions
+
 1) Install all necessary packages (hyprland, rofi, yazi, etc)
 2) git clone this repo into $HOME, preferably as $HOME/Dotfiles/ as it will be the default in scripts
 3) Navigate into the repo directory, and stow the hyprCORE package, as well as one of the visual packages
 
 ## packages
+
 Packages that I use, plus all packages included in the stow packages
 
 ### AUR
+
 * ascii-image-converter-git
 * cbonsai
 * clipse
@@ -30,6 +33,7 @@ Packages that I use, plus all packages included in the stow packages
 * yay
 
 ### standard repos (core, extra, multilib)
+
 * bat
 * btop
 * cava
@@ -66,4 +70,5 @@ Packages that I use, plus all packages included in the stow packages
 * waybar
 
 ## install script
+
 *coming soon*
