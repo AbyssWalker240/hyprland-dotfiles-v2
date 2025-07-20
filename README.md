@@ -14,8 +14,8 @@ My personal hyprland dotfiles, organized for use with stow
 
 * [ ] Motorcycle rice, gsx8r fetch image
 * [ ] McDonalds style rice
-* [ ] Script to automatically create and manage backups with rsync to crucial, store only the latest few backups
 * [ ] Install script
+* [x] Script to automatically create and manage backups with rsync to crucial, store only the latest few backups
 * [x] Add detection for empty argument in dotswap.sh, which gives an error if the directory is not provided or if an invalid name is provided
 * [x] Rofi menu for switching between themes that automatically handles reloading where possible
 * [x] Move yazi to core package and make helix the default text editor

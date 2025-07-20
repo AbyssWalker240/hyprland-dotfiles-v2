@@ -1,0 +1,101 @@
+#!/usr/bin/env bash
+
+RED="\e[1;91m"
+YELLOW="\e[1;93m"
+GREEN="\e[1;92m"
+RESET="\e[0m"
+
+BACKUP_DIR="${HOME}/crucial/backups/backupmgr"
+
+EXCLUDE_FILE="${HOME}/.rsync_exclude"
+SOURCE_DIR="${HOME}/"
+
+OLD_DATE=$(date -d "3 months ago" +%s)
+
+function prune() {
+
+  local selection
+
+  shopt -s nullglob
+
+  for file in "$BACKUP_DIR"/rosetta.[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]; do
+    file_name=$(basename "$file")
+    file_date="${file_name#rosetta.}"
+
+    file_epoch=$(date -d "$file_date" +%s 2> /dev/null)
+
+    if [ -n "$file_epoch" ] && [ "$file_epoch" -lt "$OLD_DATE" ]; then
+      
+      read -r -p "$(echo -e "\nDelete '${file_name}'?\n(${GREEN}Y${RESET}/n) ")" selection
+      
+      if [ -z "$selection" ] || [ "$selection" = "y" ] || [ "$selection" = "Y" ]; then
+        echo -e "${RED}\nStatus: ${RESET}Deleting '${file_name}'"
+        rm -rf "$file"
+      else
+        echo -e "${GREEN}Status: ${RESET}File preserved"
+      fi
+    fi
+  done
+  
+}
+
+function pruneconfirm() {
+
+  local selection
+  
+  read -r -p "$(echo -e "\nPrune old backups? (y/${GREEN}N${RESET}) ")" selection
+
+  if [ -z "$selection" ] || [ "$selection" = "n" ] || [ "$selection" = "N" ]; then
+    echo -e "${GREEN}Done: ${RESET}leaving old backups"
+    exit 1
+  else
+    prune
+  fi
+  
+}
+
+function main() {
+
+  local selection
+
+  today="$(date -I)"
+  backup_name="rosetta.${today}"
+  backup_path="${BACKUP_DIR}/${backup_name}"
+
+  read -r -p "$(echo -e "\nRun backup of '${SOURCE_DIR}'?\n(${GREEN}Y${RESET}/n) ")" selection
+
+  if [ -z "$selection" ] || [ "$selection" = "y" ] || [ "$selection" = "Y" ]; then
+    echo -e "${GREEN}Success: ${RESET}Backing up...\n${YELLOW}Do not close...${RESET}"
+  else
+    echo -e "${RED}Error: ${RESET}user cancelled"
+    exit 1
+  fi
+
+  rsync -aph --exclude-from=$EXCLUDE_FILE $SOURCE_DIR $backup_path
+
+  pruneconfirm
+  
+}
+
+function check() {
+
+  local selection
+  
+  if [ ! -d "$BACKUP_DIR" ]; then
+    echo -e "${YELLOW}Error: ${RESET}Backup directory '${BACKUP_DIR}' not found"
+    read -r -p "$(echo -e "\nCreate it? (${GREEN}Y${RESET}/n) ")" selection
+
+    if [ -z "$selection" ] || [ "$selection" = "y" ] || [ "$selection" = "Y" ]; then
+      mkdir -p "${BACKUP_DIR}"
+      echo -e "${YELLOW}Status: ${RESET}'${BACKUP_DIR}' created"
+    else
+      echo -e "${RED}Error: ${RESET}'${BACKUP_DIR}' not found"
+      exit 1
+    fi
+  fi
+  [ -d "$BACKUP_DIR" ] && [ -f "$EXCLUDE_FILE" ] && [ -d "$SOURCE_DIR" ] && main
+}
+
+check
+
+echo -e "${GREEN}\nDone!${RESET}"
