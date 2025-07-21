@@ -10,7 +10,8 @@
 ```
 
 # hypr-dotfiles-v2
-My personal hyprland dotfiles, organized for use with stow
+My personal hyprland dotfiles, organized for use with stow.
+* Installing all packages and configurations will prepare any Arch Linux machine for my personal use.
 
 ## todo
 
