@@ -68,3 +68,6 @@ alias dfh="distorage"
 export PATH="$HOME/.local/bin:$HOME/.local/bin/core:$PATH"
 export EDITOR="/usr/bin/helix"
 export PAGER="/usr/bin/bat --paging=always"
+
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
