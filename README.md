@@ -81,6 +81,11 @@ Packages that I use, plus all packages included in the stow packages
 * zsh-autosuggestions
 * zsh-syntax-highlighting
 
+## other packages/plugins/scripts
+
+* oh-my-zsh (script)
+* hyprexpo (hyprland plugin)
+
 ## install script
 
 *coming soon*
