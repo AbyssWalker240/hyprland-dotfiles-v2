@@ -1,13 +1,6 @@
 #!/usr/bin/env bash
 
-if [[ -z "$1" ]]; then
-  echo -e "\e[1;91mNo stow directory provided\e[0m, defaulting to '${HOME}/Dotfiles'..."
-  STOWDIR="$HOME/Dotfiles"
-else
-  STOWDIR="$HOME/$1"
-fi
-  # take stow directory as first argument, or default to 'Dotfiles" if none provided
-
+STOWDIR="$HOME/Dotfiles"
 STOWTARGET="$HOME"
 COREPKG="core"
 RELOADSCRIPT="$HOME/.config/hypr/scripts/reload.sh"
@@ -15,8 +8,12 @@ RELOADSCRIPT="$HOME/.config/hypr/scripts/reload.sh"
 pkglist="$(ls -d $STOWDIR/*/ | awk -F/ '{print $(NF-1)}' | grep -v ^$COREPKG$)"
   # get all packages formatted without / or leading directories, excluding core
 
-selection="$(echo "$pkglist" | rofi -dmenu -i -p "visual package" \
-  -theme $HOME/.config/rofi/themes/hyprmed.rasi 2> /dev/null)"
+if [[ "$1" = "init" ]]; then # choose first if dotswap is ran in init
+  selection="$(echo "$pkglist" | head -n 1)"
+else                         # otherwise use rofi to select
+  selection="$(echo "$pkglist" | rofi -dmenu -i -p "visual package" \
+    -theme $HOME/.config/rofi/themes/hyprmed.rasi 2> /dev/null)"
+fi
 
 [[ -z "$selection" ]] && echo -e "\e[1;91mNo selection\e[0m, exiting..." && exit 0
 
