@@ -9,7 +9,7 @@
 ░░      ░░    ░░    ░░       ░░     ░░ ░░░░░░░░ ░░      ░░ ░░      ░░░ ░░░░░░░   
 ```
 
-# hypr-dotfiles-v2
+# hyprland-dotfiles-v2
 My personal hyprland dotfiles, organized for use with stow.
 
 **NOTE:** these are my personal configurations, and will change based on my needs. It is a good starting point to create your own setup.
