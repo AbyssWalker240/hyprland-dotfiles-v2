@@ -14,7 +14,7 @@ My personal hyprland dotfiles, organized for use with stow.
 * Installing all packages and configurations will prepare any Arch Linux machine for my personal use.
 
 ## what is included
-configurations for
+configurations for:
 * clipse
 * dunst
 * fastfetch
@@ -26,7 +26,7 @@ configurations for
 * waybar
 * and yazi
 
-custom scripts
+custom scripts:
 * changing themes using stow
 * make new/delete old backups with a simple rsync script
 * easy install script
