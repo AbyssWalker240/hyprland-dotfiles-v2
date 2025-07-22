@@ -6,6 +6,7 @@
 # build yay
 # yay -S --noconfirm - < package-list
 # clone dotfiles repo as ~/Dotfiles
+# install oh-my-zsh
 # dotswap.sh init
 # install hyprexpo plugin
 ## WIP
