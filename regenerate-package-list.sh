@@ -4,6 +4,7 @@ awk '
   BEGIN { section = 0 }
   /^### AUR/ { section = "aur"; next }
   /^### standard repos/ { section = "standard"; next }
+  /^### / { section = 0 }
   /^## / { section = 0 }
   section && /^[[:space:]]*\*/ {
     sub(/^[[:space:]]*\* /, "", $0)
