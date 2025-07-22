@@ -58,7 +58,7 @@ Packages that I use, plus all packages included in the stow packages
 * qimgv-git
 * rose-pine-cursor
 * rose-pine-hyprcursor
-* spotify-player-full
+* ~~spotify-player-full~~ (this package doesn't exist anymore, I have not found the correct replacement yet)
 * tty-clock
 * yay
 
