@@ -59,6 +59,7 @@ custom scripts:
 * ascii-image-converter-git
 * cbonsai
 * clipse
+* kanata
 * qimgv-git
 * rose-pine-cursor
 * rose-pine-hyprcursor
