@@ -13,8 +13,12 @@
 My personal hyprland dotfiles, organized for use with stow.
 * Installing all packages and configurations will prepare any Arch Linux machine for my personal use.
 
+**NOTE:** these are my personal configurations, and will change based on my needs. It is a good starting point to create your own setup.
+* I would recommend cloning this, then executing ``rm -rf .git`` inside the repository, and then start tweaking to your hearts content for your own use.
+* Another repo of interest is [AbyssWalker240/dotswap](https://github.com/AbyssWalker240/dotswap), which is just the script that allows for easy switching of themes, and allows for you to set up your own configuration.
+
 ## what is included
-configurations for:
+my personal configurations for:
 * clipse
 * dunst
 * fastfetch
@@ -44,11 +48,11 @@ custom scripts:
 
 1) Install all necessary packages (hyprland, rofi, yazi, etc)
 2) git clone this repo into $HOME as ~/Dotfiles (important, scripts use ~/Dotfiles)
-3) Navigate into the repo directory, and stow the hyprCORE package, as well as one of the visual packages
+3a) Navigate into the repo directory, and stow the *core* package, as well as one of the visual packages
+    -- OR --
+3b) Use the dotswap script to stow packages
 
 ## packages
-
-Packages that I use, plus all packages included in the stow packages
 
 ### AUR
 
@@ -101,7 +105,7 @@ Packages that I use, plus all packages included in the stow packages
 * zsh-autosuggestions
 * zsh-syntax-highlighting
 
-## other packages/plugins/scripts
+### other packages/plugins/scripts
 
 * oh-my-zsh (script)
 * hyprexpo (hyprland plugin)
