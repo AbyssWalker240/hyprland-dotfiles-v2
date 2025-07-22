@@ -7,4 +7,5 @@
 # yay -S --noconfirm - < package-list
 # clone dotfiles repo as ~/Dotfiles
 # dotswap.sh init
+# install hyprexpo plugin
 ## WIP
