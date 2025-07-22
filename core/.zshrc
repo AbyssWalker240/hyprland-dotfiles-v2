@@ -25,7 +25,6 @@ fi
 alias cls="clear"
 alias home="z ~"
 alias h="z ~"
-alias v="nvim"
 alias hx="helix"
 alias m="micro"
 alias mz="~/scripts/bash/mz"
@@ -42,6 +41,8 @@ alias redunstify="killall dunst && dunstify"
 alias resource="source $HOME/.zshrc"
 
 alias rm="rm -v"
+
+alias gcm="git commit -m"
 
 alias lt="tree -L 1"
 alias tree1="tree -L 1"

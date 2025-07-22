@@ -13,15 +13,32 @@
 My personal hyprland dotfiles, organized for use with stow.
 * Installing all packages and configurations will prepare any Arch Linux machine for my personal use.
 
+## what is included
+configurations for
+* clipse
+* dunst
+* fastfetch
+* helix
+* hyprland
+* kitty
+* rofi
+* spotify-player
+* waybar
+* and yazi
+
+custom scripts
+* changing themes using stow
+* make new/delete old backups with a simple rsync script
+* easy install script
+* small tool to help vent frustration
+
 ## todo
 
 * [ ] Motorcycle rice, gsx8r fetch image
 * [ ] McDonalds style rice
 * [ ] Install script
 * [x] Script to automatically create and manage backups with rsync to crucial, store only the latest few backups
-* [x] Add detection for empty argument in dotswap.sh, which gives an error if the directory is not provided or if an invalid name is provided
 * [x] Rofi menu for switching between themes that automatically handles reloading where possible
-* [x] Move yazi to core package and make helix the default text editor
 
 ## instructions
 
