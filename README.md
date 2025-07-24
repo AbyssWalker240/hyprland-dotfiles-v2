@@ -37,6 +37,7 @@ custom scripts:
 
 ## todo
 
+* [ ] Finalize yazi styling for *ArchChan* package
 * [ ] Install script
 * [ ] Relocate all scripts into '~/.local/bin/custom' (subfolders so they are not accessible in *$PATH*) 
 * [ ] Motorcycle rice, gsx8r fetch image
