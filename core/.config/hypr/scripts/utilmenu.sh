@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 OPTIONS="Change Wallpaper
-Dotswap
+Calculator
 Network
 Screenshot
 Power Options"
@@ -13,8 +13,8 @@ case $selection in
   "Change Wallpaper")
     $HOME/.config/hypr/scripts/cyclewallv2.sh
     ;;
-  "Dotswap")
-    $HOME/.config/hypr/scripts/dotswap.sh "Dotfiles"
+  "Calculator")
+    $HOME/.local/bin/scripts/rofi-utils/calc/calc.sh
     ;;
   "Network")
     $HOME/.config/waybar/scripts/impala.sh

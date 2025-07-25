@@ -1,0 +1,7 @@
+# ignore pyc files (like is generated from rofi calculator)
+*.pyc
+
+# ignore sensitive files (as long as I name them right)
+*.token
+*.pass
+*.login
