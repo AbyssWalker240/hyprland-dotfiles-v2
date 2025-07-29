@@ -14,7 +14,7 @@ My personal hyprland dotfiles, organized for use with stow.
 
 **NOTE:** these are my personal configurations, and will change based on my needs. It is a good starting point to create your own setup.
 * I would recommend cloning this then tweaking to your hearts content for your own use.
-* Another repo of interest is [AbyssWalker240/dotswap](https://github.com/AbyssWalker240/dotswap), which is just the script that allows for easy switching of themes, and allows for you to set up your own configuration.
+* Another repo of interest is [AbyssWalker240/dotswap](https://github.com/AbyssWalker240/dotswap), which is just the script that allows for easy switching of themes, and allows for you to set up your own configuration.  This script makes my whole setup possible.
 
 ## what is included
 my personal configurations for:
