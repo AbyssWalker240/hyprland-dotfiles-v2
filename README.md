@@ -51,10 +51,10 @@ custom scripts:
 ## instructions
 
 1) Install all necessary packages (hyprland, rofi, yazi, etc)
-2) git clone this repo into *$HOME* as '~/Dotfiles' (important, scripts use '~/Dotfiles')
-3a) Navigate into the repo directory, and stow the *core* package, as well as one of the visual packages
-    -- OR --
-3b) Use the dotswap.sh script to stow packages
+2) git clone this repo into *$HOME* as '\~/Dotfiles' (important, scripts use '\~/Dotfiles')<br/>
+**3a)** Navigate into the repo directory, and stow the *core* package, as well as one of the visual packages<br/>
+    -- OR --<br/>
+**3b)** Use the dotswap.sh script to stow packages
 
 ## packages
 
