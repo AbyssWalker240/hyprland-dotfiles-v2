@@ -64,6 +64,13 @@ distorage () {
 alias dfh="distorage"
 
 
+getpkgbuild() {
+	if [ -z "$1" ]; then
+		echo -e "\e[1;91mPlease enter a package!"
+	else
+		yay -Gp "$1" | bat
+	fi
+}
 
 
 export PATH="$HOME/.local/bin:$HOME/.local/bin/core:$PATH"
