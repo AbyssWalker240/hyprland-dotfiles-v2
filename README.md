@@ -40,10 +40,13 @@ custom scripts:
 * [ ] Finalize yazi styling for *ArchChan* package
 * [ ] Install script
 * [ ] Relocate all scripts into '~/.local/bin/custom' (subfolders so they are not accessible in *$PATH*) 
-* [ ] Motorcycle rice, gsx8r fetch image
-* [ ] McDonalds style rice
 * [x] Script to automatically create and manage backups with rsync to crucial, store only the latest few backups
 * [x] Rofi menu for switching between themes that automatically handles reloading where possible
+
+### themes
+
+* [ ] Motorcycle theme, gsx8r fetch image
+* [ ] McDonalds style theme
 
 ## instructions
 
