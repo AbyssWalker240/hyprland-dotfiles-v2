@@ -64,9 +64,12 @@ custom scripts:
 * qimgv-git
 * rose-pine-cursor
 * rose-pine-hyprcursor
-* ~~spotify-player-full~~ (this package doesn't exist anymore, I have not found the correct replacement yet, maybe spotify-player-bin)
 * tty-clock
 * yay
+
+### broken AUR
+
+* ~~spotify-player-full~~ (this package doesn't exist anymore, I have not found the correct replacement yet, maybe spotify-player-bin)
 
 ### standard repos (core, extra, multilib)
 

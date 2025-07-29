@@ -38,7 +38,7 @@
     "uptime",
     {
       "type": "packages",
-      "format": "{2}+{44}"
+      "format": "{2} + {44}"
     },
     "break",
     {
