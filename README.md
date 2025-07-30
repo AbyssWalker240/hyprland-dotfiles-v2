@@ -80,6 +80,7 @@ custom scripts:
 * btop
 * cava
 * cowsay
+* dex
 * discord
 * dunst
 * fastfetch
