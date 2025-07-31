@@ -17,26 +17,23 @@ plugins=(git git-prompt)
 source $ZSH/oh-my-zsh.sh
 
 if [[ "$TERM" == "linux" || "$TERM" == "tmux-256color" ]]; then
-	source $HOME/.tty_prompt
+	source $HOME/.tty_prompt.zsh
 else
-	source $HOME/.zsh_prompt
+	source $HOME/.zsh_prompt.zsh
 fi
 
+source $HOME/.zsh_funnies.zsh
+
 alias cls="clear"
-alias home="z ~"
-alias h="z ~"
+
 alias hx="helix"
 alias m="micro"
-alias mz="~/scripts/bash/mz"
-alias fuck="figlet -f ~/git/figlet-fonts/3d FUCK | lolcat"
-alias balls="figlet -f ~/git/figlet-fonts/3d BALLS | lolcat"
-alias cbt="figlet -f ~/git/figlet-fonts/3d 'Cock & Ball TORTURE' | lolcat"
-alias shit="figlet -f ~/git/figlet-fonts/3d 'SHIT' | lolcat"
-alias yeah="figlet -f ~/git/figlet-fonts/3d YEAH | lolcat"
+
 alias icat="kitty icat"
+
 alias fastfetch="\clear && echo && fastfetch"
 alias smallfetch="fastfetch --config ~/config/fastfetch/config-small.jsonc"
-alias snapstreaks="\clear && echo && richdate && figlet S -f git/figlet-fonts/3d | lolcat && echo"
+
 alias redunstify="killall dunst && dunstify"
 alias resource="source $HOME/.zshrc"
 
