@@ -42,6 +42,9 @@ alias rm="rm -v"
 alias gcm="git commit -m"
 
 alias lt="tree -L 1"
+alias lta="lt -a"
+alias ltl="lt -l"
+
 alias tree1="tree -L 1"
 alias tree2="tree -L 2"
 alias tree3="tree -L 3"
