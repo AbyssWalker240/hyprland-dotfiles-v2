@@ -23,7 +23,7 @@ echo -e "\e[1;92m${selection} \e[0mHas been selected, switching now..."
 for pkg in $pkglist; do
   # unstow all packages to ensure nothing gets stowed twice
   # (also acts as restow if necesary)
-  stow --dir $STOWDIR --target $STOWTARGET --delete ${pkg}
+  stow --dir $STOWDIR --target $STOWTARGET --delete $pkg
 done
 
 stow --dir $STOWDIR --target $STOWTARGET --stow $selection
