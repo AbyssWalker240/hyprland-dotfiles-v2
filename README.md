@@ -103,6 +103,7 @@ custom scripts:
 * micro
 * noto-fonts-cjk
 * noto-fonts-emoji
+* python-lsp-server
 * rofi-emoji
 * rofi-wayland
 * rsync
