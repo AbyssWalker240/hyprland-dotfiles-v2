@@ -1,4 +1,4 @@
-# FlatGruvbox
+# GruvboxFlat
 
 ## Sharp and focused
 with minimal distractions
