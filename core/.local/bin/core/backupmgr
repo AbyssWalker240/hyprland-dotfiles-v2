@@ -65,7 +65,7 @@ function main() {
   read -r -p "$(echo -e "\nRun backup of '${SOURCE_DIR}'?\n(${GREEN}Y${RESET}/n) ")" selection
 
   if [ -z "$selection" ] || [ "$selection" = "y" ] || [ "$selection" = "Y" ]; then
-    echo -e "${GREEN}Success: ${RESET}Backing up...\n${YELLOW}Do not close...${RESET}"
+    echo -e "${GREEN}Status: ${RESET}Backing up...\n${YELLOW}Do not close...${RESET}"
   else
     echo -e "${RED}Error: ${RESET}user cancelled"
     exit 1
