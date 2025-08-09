@@ -1,0 +1,40 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "height": 32,
+    "modules-left": ["hyprland/workspaces","custom/nowplaying-title","custom/nowplaying-separator","custom/nowplaying-artist"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["clock"],
+
+    "hyprland/window": {
+        "max-length": 200
+    },
+    "clock": {
+        "format": "{:%a, %b %d  %I:%M %p}",
+        "tooltip":false
+    },
+    "custom/networkmenu": {
+        "format": "Network",
+        "on-click": "~/.config/waybar/scripts/impala.sh",
+        "tooltip":false,
+        "tooltip-format":"Network Configuration"
+    },
+    "custom/wallpaperswap": {
+        "format": "Wallpaper",
+        "on-click": "~/.config/hypr/scripts/cyclewallv2.sh",
+        "tooltip":false,
+        "tooltip-format":"Cycle Wallpaper"
+    },
+    "custom/nowplaying-title": {
+        "exec": "playerctl -p spotify,spotify_player metadata title",
+        "interval": 1
+    },
+    "custom/nowplaying-artist": {
+        "exec": "playerctl -p spotify,spotify_player metadata artist",
+        "interval": 1
+    },
+    "custom/nowplaying-separator": {
+        "exec": "~/.config/waybar/scripts/display-np-separator.sh ' - '",
+        "interval": 1
+    }
+}

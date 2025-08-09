@@ -1,0 +1,18 @@
+@theme "hyprsubaru.rasi"
+
+
+window {
+    width: 1000px;
+    height: 50px;
+}
+inputbar {
+    padding:    1px ;
+    spacing:    0px ;
+    text-color: var(normal-foreground);
+    children:   [ "prompt","textbox-prompt-colon","entry" ];
+}
+textbox-prompt-colon {
+    margin:     0px 0.3000em 0.0000em 0.0000em ;
+    expand:     false;
+    str:        "   ";
+}
