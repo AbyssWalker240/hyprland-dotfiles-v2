@@ -75,7 +75,7 @@ getpkgbuild() {
 }
 
 
-export PATH="$HOME/.local/bin:$HOME/.local/bin/core:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.local/bin/core:$HOME/.cargo/bin:$PATH"
 export EDITOR="/usr/bin/helix"
 export PAGER="/usr/bin/bat --paging=always"
 
