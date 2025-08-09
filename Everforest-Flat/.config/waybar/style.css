@@ -5,8 +5,8 @@
 }
 
 window#waybar {
-    background: #1d2021;
-    color: #83a598;
+    background: #1e2326;
+    color: #a7c080;
 }
 
 tooltip {
@@ -18,27 +18,27 @@ tooltip {
     padding: 0 5px;
     background: transparent;
     border-bottom: 3px solid transparent;
-    color: #d5c5a1; /* fg2 */
+    color: #d3c6aa;
 }
 
 #workspaces button.active {
-    border-bottom: 3px solid #b8bb26;
-    color: #b8bb26;
+    border-bottom: 3px solid #a7c080;
+    color: #a7c080;
 }
 
 #workspaces button.urgent {
-    border-bottom: 3px solid #fb4934;
-    color: #fb4934;
+    border-bottom: 3px solid #e67e80;
+    color: #e67e80;
 }
 
 #workspaces button:hover {
-    background: #282828; /* bg */
-    color: #83a598;
+    background: #272e33;
+    color: #a7c080;
 }
 
 #mode, #clock, #battery { 
     padding: 0 10px;
-    color: #d5c5a1; /* fg2 */
+    color: #d3c6aa;
 }
 
 #custom-networkmenu, #custom-wallpaperswap {
@@ -47,15 +47,15 @@ tooltip {
 
 #custom-nowplaying-title {
     padding: 0 0 0 200px;
-    color: #d5c5a1; /* fg2 */
+    color: #d3c6aa;
 }
 
 #custom-nowplaying-separator {
     padding: 0px;
-    color: #7c6f64; /* bg4 */
+    color: #4f5b50;
 }
 
 #custom-nowplaying-artist {
     padding: 0px;
-    color: #7c6f64; /* bg4 */
+    color: #4f5b50; 
 }
