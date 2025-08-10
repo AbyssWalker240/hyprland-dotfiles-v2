@@ -1,32 +1,36 @@
 * {
     red:                         rgba ( 220, 50, 47, 100 % );
     blue:                        rgba ( 38, 139, 210, 100 % );
-    foreground:                  #ebdbb2;
+    foreground:                  #d3c6aa;
     lightfg:                     rgba ( 95, 129, 157, 100 % );
-    background:                  #282828;
+    background:                  #272e33;
     lightbg:                     rgba ( 5, 5, 5, 80 % );
     selected-active-foreground:  var(background);
-    separatorcolor:              #504945;
-    urgent-foreground:           #fb4934;
+    separatorcolor:              #374145; /* bg2 */
+    urgent-foreground:           #e67e80;
     alternate-urgent-background: var(lightbg);
     background-color:            transparent;
     border-color:                var(foreground);
     normal-background:           rgba (0, 0, 0, 0 %);
     selected-urgent-background:  var(red);
     alternate-active-background: var(lightbg);
-    spacing:                     5;
     alternate-normal-foreground: var(foreground);
     urgent-background:           var(background);
     selected-normal-foreground:  var(lightbg);
-    active-foreground:           #8ec07c;
-    selected-active-background:  #8ec07c;
+    active-foreground:           #83c092;
+    selected-active-background:  #83c092;
     active-background:           var(normal-background);
-    selected-normal-background:  #fe8019;
-    alternate-normal-background: #3c3836; /* bg1 */ 
+    selected-normal-background:  #a7c080;
+    alternate-normal-background: #2e383c; /* bg1 */ 
     selected-urgent-foreground:  var(background);
     normal-foreground:           var(foreground);
     alternate-urgent-foreground: var(red);
     alternate-active-foreground: var(blue);
+    prompt-color:                #dbbc7f;
+    text-entry-color:            #dbbc7f;
+    placeholder-color:           #ff00ff;
+
+    spacing:                     5;
 }
 element {
     padding: 10px ;
@@ -155,15 +159,15 @@ case-indicator {
     text-color: var(normal-foreground);
 }
 entry {
-    text-color:        #d65d0e;
+    text-color:        var(text-entry-color);
     cursor:            text;
     spacing:           0;
-    placeholder-color: #414868;
+    placeholder-color: var(placeholder-color);
     placeholder:       "";
 }
 prompt {
     spacing:    0;
-    text-color: #fe8019;
+    text-color: var(prompt-color);
 }
 textbox-prompt-colon {
     margin:     0px 0.3000em 0.0000em 0.0000em ;
