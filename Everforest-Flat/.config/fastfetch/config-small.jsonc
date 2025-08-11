@@ -3,8 +3,8 @@
   "logo": {
     "type": "small",
     "color": {
-      "1": "1;#fe8019",
-      "2": "1;#d65d0e"
+      "1": "1;92",
+      "2": "1;32"
     },
     "padding": {
       "top": 1
@@ -13,18 +13,18 @@
   "display": {
     "separator": "",
     "color": {
-      "keys": "1;94",
-      "separator": "0;94"
+      "keys": "1;96",
+      "separator": "0;96"
     },
-    "key": { "width": 10 }
+    "key": { "width": 11 }
   },
   "modules": [
     {
       "type": "title",
       "color": {
-        "user": "1;94",
-        "at": "0;#fe8019",
-        "host": "1;94"
+        "user": "1;96",
+        "at": "1;93",
+        "host": "1;96"
       }
     },
     "break",

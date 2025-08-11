@@ -3,24 +3,24 @@
   "logo": {
     "type": "auto",
     "color": {
-      "1": "1;#fe8019",
-      "2": "1;#d65d0e"
+      "1": "1;92",
+      "2": "1;32"
     }
   },
   "display": {
     "separator": " \u27a4  ",
     "color": {
-      "keys": "1;94",
-      "separator": "0;#d65d0e"
+      "keys": "1;96",
+      "separator": "0;93"
     }
   },
   "modules": [
     {
       "type": "title",
       "color": {
-        "user": "1;94",
-        "at": "0;#fe8019",
-        "host": "1;94"
+        "user": "1;96",
+        "at": "0;93",
+        "host": "1;96"
       }
     },
     "break",
