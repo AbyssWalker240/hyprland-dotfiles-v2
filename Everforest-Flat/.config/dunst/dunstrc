@@ -58,11 +58,11 @@
     text_icon_padding = 0
 
     frame_width = 2
-    frame_color = "#504945"
+    frame_color = "#374145"
 
     gap_size = 0
 
-    separator_color = "#504945"
+    separator_color = frame
     #  * auto: dunst tries to find a color fitting to the background;
     #  * foreground: use the same color as the foreground;
     #  * frame: use the same color as the frame;
@@ -243,24 +243,24 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#282828"
-    foreground = "#ebdbb2"
+    background = "#272e33"
+    foreground = "#d3c6aa"
     timeout = 4
     # Icon for notifications with low urgency
     default_icon = dialog-information
 
 [urgency_normal]
-    background = "#282828"
-    foreground = "#ebdbb2"
+    background = "#272e33"
+    foreground = "#d3c6aa"
     timeout = 4
     override_pause_level = 30
     # Icon for notifications with normal urgency
     default_icon = dialog-information
 
 [urgency_critical]
-    background = "#282828"
-    foreground = "#ebdbb2"
-    frame_color = "#fb4934"
+    background = "#272e33"
+    foreground = "#d3c6aa"
+    frame_color = "#e67e80"
     timeout = 0
     override_pause_level = 60
     # Icon for notifications with critical urgency
