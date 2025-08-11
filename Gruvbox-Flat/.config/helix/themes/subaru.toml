@@ -97,7 +97,7 @@
 "ui.picker.header.column" = { underline.style = "line" }
 "ui.picker.header.column.active" = { modifiers = ["bold"], underline.style = "line" }
 "ui.selection" = { bg = "bg2" }
-"ui.selection.primary" = { bg = "bg3" }
+"ui.selection.primary" = { bg = "bg3", fg = "fg0" }
 
 "ui.statusline" = { fg = "fg1", bg = "bg2" }
 "ui.statusline.inactive" = { fg = "fg4", bg = "bg2" }
