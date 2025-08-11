@@ -15,6 +15,8 @@ hidden = false
 
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
+C-left = [ "move_prev_word_start", "move_char_left", "move_char_right" ]
+C-right = [ "move_next_word_start", "move_char_left", "move_char_right" ]
 
 [keys.insert]
 # windows-like movement
