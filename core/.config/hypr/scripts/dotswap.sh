@@ -5,7 +5,8 @@ STOWTARGET="$HOME"
 COREPKG="core"
 RELOADSCRIPT="$HOME/.config/hypr/scripts/reload.sh"
 
-pkglist="$(ls -d $STOWDIR/*/ | awk -F/ '{print $(NF-1)}' | grep -v ^$COREPKG$)"
+pkglist="$(ls -d $STOWDIR/*/ | awk -F/ '{print $(NF-1)}' | grep -v ^$COREPKG$ \
+  | sort -t_ -k2n)"
   # get all packages formatted without / or leading directories, excluding core
 
 if [[ "$1" = "init" ]]; then # choose first if dotswap is ran in init
