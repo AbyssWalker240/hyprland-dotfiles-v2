@@ -15,10 +15,11 @@ tooltip {
 }
 
 #workspaces button {
-    padding: 0 5px;
-    background: transparent;
+    padding: 0 6px;
+    background: #272e33;
     border-bottom: 3px solid transparent;
     color: #d3c6aa;
+    border-radius: 0;
 }
 
 #workspaces button.active {
@@ -32,13 +33,14 @@ tooltip {
 }
 
 #workspaces button:hover {
-    background: #272e33;
+    background: #2e383c;
     color: #a7c080;
 }
 
 #mode, #clock, #battery { 
     padding: 0 10px;
     color: #d3c6aa;
+    background: #272e33;
 }
 
 #custom-networkmenu, #custom-wallpaperswap {
@@ -58,4 +60,11 @@ tooltip {
 #custom-nowplaying-artist {
     padding: 0px;
     color: #4f5b50; 
+}
+
+#custom-left-slope, #custom-right-slope {
+    padding: 0;
+    margin: 0;
+    color: #272e33;
+    font-size: 32px;
 }

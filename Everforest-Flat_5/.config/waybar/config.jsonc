@@ -36,5 +36,11 @@
     "custom/nowplaying-separator": {
         "exec": "~/.config/waybar/scripts/display-np-separator.sh ' - '",
         "interval": 1
+    },
+    "custom/left-slope": {
+        "format": "\u25e3"
+    },
+    "custom/right-slope": {
+        "format": "\u25e2"
     }
 }
