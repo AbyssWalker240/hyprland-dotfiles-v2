@@ -8,17 +8,18 @@ Shutdown
 Shutdown Now" | rofi -dmenu -i -p "power" -lines 4 -theme $HOME/.config/rofi/themes/hyprpwrm.rasi 2> /dev/null)
 
 if [[ $selection == "Shutdown" ]]; then
-	shutdown +2
-	hyprctl notify 3 120000 "rgb(ff0000)" "Shutdown scheduled"
+	hyprctl notify 3 30000 "rgb(ff0000)" "Shutdown scheduled"
+	sleep 30
+	systemctl poweroff
 elif [[ $selection == "Reboot" ]]; then
-	reboot
+	systemctl reboot
 elif [[ $selection == "Shutdown Now" ]]; then
-	shutdown now
+  systemctl
 elif [[ $selection == "Log out" ]]; then
 	loginctl terminate-user $USER
 elif [[ $selection == "Sleep" ]]; then
 	systemctl suspend
 else
-	shutdown -c
 	hyprctl dismissnotify &> /dev/null
+  killall powerMenu.sh
 fi
