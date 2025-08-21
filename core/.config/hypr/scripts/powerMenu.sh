@@ -14,7 +14,7 @@ if [[ $selection == "Shutdown" ]]; then
 elif [[ $selection == "Reboot" ]]; then
 	systemctl reboot
 elif [[ $selection == "Shutdown Now" ]]; then
-  systemctl
+  systemctl poweroff
 elif [[ $selection == "Log out" ]]; then
 	loginctl terminate-user $USER
 elif [[ $selection == "Sleep" ]]; then
