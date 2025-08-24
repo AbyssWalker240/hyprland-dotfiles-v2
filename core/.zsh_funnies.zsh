@@ -5,6 +5,9 @@ alias shit="figlet -f ~/git/figlet-fonts/3d 'SHIT' | lolcat"
 alias yeah="figlet -f ~/git/figlet-fonts/3d YEAH | lolcat"
 alias ok="figlet -f ~/git/figlet-fonts/3d OK | lolcat"
 alias snapstreaks="\clear && echo && richdate && figlet S -f git/figlet-fonts/3d | lolcat && echo"
+alias ass="figlet -f ~/git/figlet-fonts/3d ASS | lolcat"
+
+alias ball-loop="while true; do balls; done"
 
 function loltext() {
   figlet -f ~/git/figlet-fonts/3d "$*" | lolcat

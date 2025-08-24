@@ -74,6 +74,7 @@ getpkgbuild() {
 		yay -Gp "$1" | bat
 	fi
 }
+alias gpb="getpkgbuild"
 
 
 export PATH="$HOME/.local/bin:$HOME/.local/bin/core:$HOME/.cargo/bin:$PATH"
