@@ -17,10 +17,8 @@ g="\e[1;92m"
 function confirmation() {
   read -r -p "$(echo -e "${1}\n${r}(Y/n)${R} ")" selection
   if [ -z "$selection" ] || [ "$selection" = "y" ] || [ "$selection" = "Y" ]; then
-    echo "Yes"
     return 0
   else
-    echo "No"
     return 1
   fi
 }
@@ -38,7 +36,7 @@ It is reccomended that you start on a fresh install of Arch.
 This script will build yay from the AUR, and then use yay to install all of
 the necesary packages.
 It will also install oh-my-zsh
-"
+" || exit 1
 
 
 # Initial update and dependancy install
