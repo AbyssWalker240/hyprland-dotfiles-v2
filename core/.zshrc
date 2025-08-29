@@ -32,7 +32,7 @@ alias m="micro"
 alias icat="kitty icat"
 
 alias fastfetch="\clear && echo && fastfetch"
-alias smallfetch="fastfetch --config ~/config/fastfetch/config-small.jsonc"
+alias smallfetch="fastfetch --config ~/.config/fastfetch/config-small.jsonc"
 
 alias redunstify="killall dunst && dunstify"
 alias resource="source $HOME/.zshrc"
@@ -53,6 +53,10 @@ alias tree3="tree -L 3"
 alias treea="tree -a ./*/"
 
 alias glow="glow -t"
+
+alias weather="curl wttr.in/48638\?u1"
+alias forecast="curl wttr.in/48638\?u"
+alias wttr="weather"
 
 # zoxide init
 eval "$(zoxide init zsh)"

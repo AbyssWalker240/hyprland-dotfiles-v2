@@ -112,6 +112,8 @@ custom scripts:
 * tree
 * ttf-ubuntu-font-family
 * waybar
+* yazi
+* zoxide
 * zsh-autosuggestions
 * zsh-syntax-highlighting
 
