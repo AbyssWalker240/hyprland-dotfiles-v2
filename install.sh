@@ -1,11 +1,5 @@
 #!/usr/bin/env bash
 
-## WIP
-# install oh-my-zsh
-# dotswap.sh init
-# install hyprexpo plugin
-## WIP
-
 R="\e[0m"
 r="\e[1;91m"
 g="\e[1;92m"
