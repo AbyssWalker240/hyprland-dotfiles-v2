@@ -16,8 +16,10 @@ function confirmation() {
 
 
 # Arch?
-command -v pacman > /dev/null || exit 1
-
+if ! command -v pacman > /dev/null; then
+  echo -e "${r}This script is designed for Arch Linux/derivatives only!${R}"
+  exit 1
+fi
 
 # Confirm with user
 if ! confirmation "${g}\nHello${R}\n
@@ -44,15 +46,6 @@ Proceed?${R}
 "; then
   echo -e "${r}User cancelled, aborting.${R}" && exit 1
 fi
-
-
-# Collect sudo credentials and renew them periodically
-sudo -v
-
-while true; do
-    sudo -n true
-    sleep 60
-done 2>/dev/null & KEEPALIVE=$!
 
 
 # Initial update and dependancy install
@@ -98,11 +91,17 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 chsh -s "$(command -v zsh)" ${USER}
 
 
-# Kill sudo credential renewer
-kill $KEEPALIVE
-
 # Initialize dotswap
 echo -e "${g}\nStowing configs...${R}"
 rm -f "${HOME}/.zshrc"
 mkdir "${HOME}/Pictures" "${HOME}/Resources" "${HOME}/.local/bin" "${HOME}/.local/share" "${HOME}/.config" -p
 $HOME/Dotfiles/core/.config/hypr/scripts/dotswap.sh init
+
+
+# All done!
+echo -e "${g}All done!${R}
+A reboot is recomended. You will need to manually set up a display manager
+if you want one. Some extra configuration may also be necesary, as systems
+vary a lot.
+
+${g}run 'hyprland' to start!${R}"
