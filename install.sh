@@ -30,8 +30,9 @@ This script will build yay from the AUR, and then use yay to install all of
 the necesary packages.
 It will also install oh-my-zsh
 
-After installation and a successful boot into your new system, you can run
-install-plugins.sh to enable the hyprexpo plugin to get rid of the error.
+After installation and a successful boot into your new system, you will need to
+manually enable any hyprland plugins, as it requires hyprland to be running,
+Instructions available on Github.
 
 The script may ask for your password multiple times throughout the process,
 so please be prepared to enter it in.
@@ -95,11 +96,11 @@ chsh -s "$(command -v zsh)" ${USER}
 echo -e "${g}\nStowing configs...${R}"
 rm -f "${HOME}/.zshrc"
 mkdir "${HOME}/Pictures" "${HOME}/Resources" "${HOME}/.local/bin" "${HOME}/.local/share" "${HOME}/.config" -p
-$HOME/Dotfiles/core/.config/hypr/scripts/dotswap.sh init
+$HOME/Dotfiles/core/.config/hypr/scripts/dotswap.sh init &> /dev/null
 
 
 # All done!
-echo -e "${g}All done!${R}
+echo -e "${g}\nAll done!${R}
 A reboot is recomended. You will need to manually set up a display manager
 if you want one. Some extra configuration may also be necesary, as systems
 vary a lot.
