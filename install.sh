@@ -29,14 +29,15 @@ command -v pacman > /dev/null || exit 1
 
 
 # Confirm with user
-confirmation "Hello\n
+if ! confirmation "Hello\n
 This is a script that installs my hyprland dotfiles onto an Arch Linux system.
 It is reccomended that you start on a fresh install of Arch.
 
 This script will build yay from the AUR, and then use yay to install all of
 the necesary packages.
 It will also install oh-my-zsh
-" || exit 1
+"; then
+  echo -e "${r}User cancelled, aborting.${R}" && exit 1
 
 
 # Initial update and dependancy install
