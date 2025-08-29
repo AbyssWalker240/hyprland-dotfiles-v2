@@ -32,6 +32,7 @@ stow --dir $STOWDIR --target $STOWTARGET --restow $COREPKG
 
 if [[ "$!" = "init" ]]; then
   echo -e "\e[1;92mSuccess!\e[0m Exiting..." && exit 0
+fi
 
 echo -e "\e[1;94mReloading\e[0m..."
 "$RELOADSCRIPT" > /dev/null

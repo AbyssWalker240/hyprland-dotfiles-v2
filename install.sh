@@ -31,6 +31,9 @@ It will also install oh-my-zsh
 After installation and a successful boot into your new system, you can run
 install-plugins.sh to enable the hyprexpo plugin to get rid of the error.
 
+The script may ask for your password multiple times throughout the process,
+so please be prepared to enter it in.
+
 ${g}Proceed?${R}
 "; then
   echo -e "${r}User cancelled, aborting.${R}" && exit 1
@@ -43,6 +46,13 @@ Proceed?${R}
 fi
 
 
+# Collect sudo credentials
+while true; do
+    sudo -n true
+    sleep 60
+done 2>/dev/null & KEEPALIVE=$!
+
+
 # Initial update and dependancy install
 echo -e "${g}\nUpdating system and installing dependencies...${R}"
 sudo pacman -Syu --needed --noconfirm git
@@ -53,13 +63,13 @@ echo -e "${g}\nBuilding yay in a temporary directory...${R}"
 current_pid="$$"
 yay_dir="${HOME}/yay${current_pid}"
 
-echo "Cloning PKGBUILD into '${yay_dir}'"
+echo -e "${g}Cloning PKGBUILD into${R} '${yay_dir}'"
 git clone https://aur.archlinux.org/yay.git "${yay_dir}"
 
 cd "${yay_dir}"
 makepkg -si --needed --noconfirm
 
-echo "Cleaning up..."
+echo -e "${g}Cleaning up...${R}"
 cd "${HOME}"
 rm -rf "${yay_dir}"
 
@@ -71,9 +81,10 @@ cd "${HOME}/Dotfiles"
 
 
 # Install packages
-if ! confirmation "It is time to install all the packages.
+if ! confirmation "${g}\nIt is time to install all the packages.${R}
 Depending on your internet connection, this may take a while.
-Proceed?"; then
+Proceed?
+"; then
   echo -e "${r}User cancelled, aborting.${R}" && exit 1
 fi
 yay -S --needed --noconfirm - < package-list
@@ -85,8 +96,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 chsh -s "$(command -v zsh)" ${USER}
 
 
+# Kill sudo credential renewer
+kill $KEEPALIVE
+
 # Initialize dotswap
 echo -e "${g}\nStowing configs...${R}"
 rm -f "${HOME}/.zshrc"
-mkdir "${HOME}/Pictures"
+mkdir "${HOME}/Pictures" "${HOME}/Resources" "${HOME}/.local/bin" "${HOME}/.local/share" "${HOME}/.config" -p
 $HOME/Dotfiles/core/.config/hypr/scripts/dotswap.sh init
