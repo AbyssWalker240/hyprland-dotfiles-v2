@@ -9,9 +9,13 @@
 # install hyprexpo plugin
 ## WIP
 
+R="\e[0m"
+r="\e[1;91m"
+g="\e[1;92m"
+
 
 function confirmation() {
-  read -r -p "$(echo -e "$1")" selection
+  read -r -p "$(echo -e "${1}\n${r}(Y/n)${R} ")" selection
   if [ -z "$selection" ] || [ "$selection" = "y" ] || [ "$selection" = "Y" ]; then
     echo "Yes"
     return 0

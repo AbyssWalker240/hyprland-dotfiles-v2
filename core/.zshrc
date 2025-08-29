@@ -41,6 +41,7 @@ alias rm="rm -v"
 
 alias gcm="git commit -m"
 alias gcp="git commit && git push"
+alias gcap="git commit -a && git push"
 
 alias lt="tree -L 1"
 alias lta="lt -a"
