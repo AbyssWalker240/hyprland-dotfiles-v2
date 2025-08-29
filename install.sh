@@ -95,7 +95,7 @@ chsh -s "$(command -v zsh)" ${USER}
 # Initialize dotswap
 echo -e "${g}\nStowing configs...${R}"
 rm -f "${HOME}/.zshrc"
-mkdir "${HOME}/Pictures" "${HOME}/Resources" "${HOME}/.local/bin" "${HOME}/.local/share" "${HOME}/.config" -p
+mkdir "${HOME}/Pictures" "${HOME}/Resources" "${HOME}/.local/bin" "${HOME}/.local/share" "${HOME}/.config" "${HOME}/Pictures/Wallpapers" -p
 $HOME/Dotfiles/core/.config/hypr/scripts/dotswap.sh init &> /dev/null
 
 
