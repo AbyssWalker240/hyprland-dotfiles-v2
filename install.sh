@@ -46,7 +46,9 @@ Proceed?${R}
 fi
 
 
-# Collect sudo credentials
+# Collect sudo credentials and renew them periodically
+sudo -v
+
 while true; do
     sudo -n true
     sleep 60
