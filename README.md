@@ -103,6 +103,9 @@ custom scripts:
 * micro
 * noto-fonts-cjk
 * noto-fonts-emoji
+* pavucontrol
+* pipewire
+* playerctl
 * python-lsp-server
 * rofi-emoji
 * rofi-wayland

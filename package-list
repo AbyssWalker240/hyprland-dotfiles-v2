@@ -34,6 +34,10 @@ lolcat
 micro
 noto-fonts-cjk
 noto-fonts-emoji
+pavucontrol
+pipewire
+playerctl
+python-lsp-server
 rofi-emoji
 rofi-wayland
 rsync
@@ -42,5 +46,7 @@ swww
 tree
 ttf-ubuntu-font-family
 waybar
+yazi
+zoxide
 zsh-autosuggestions
 zsh-syntax-highlighting

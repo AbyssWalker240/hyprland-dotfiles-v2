@@ -79,12 +79,14 @@ sleep 3
 yay -S --needed --noconfirm - < package-list
 
 
-# Initialize dotswap
-echo -e "${g}Stowing configs...${R}"
-mkdir "${HOME}/Pictures"
-$HOME/Dotfiles/core/.config/hypr/scripts/dotswap.sh init
-
-
 # Install oh-my-zsh
 echo -e "${g}Installing oh-my-zsh${R}"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+chsh -s "$(command -v zsh)" ${USER}
+
+
+# Initialize dotswap
+echo -e "${g}Stowing configs...${R}"
+rm -f "${HOME}/.zshrc"
+mkdir "${HOME}/Pictures"
+$HOME/Dotfiles/core/.config/hypr/scripts/dotswap.sh init
