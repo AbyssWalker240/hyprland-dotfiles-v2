@@ -38,6 +38,7 @@ the necesary packages.
 It will also install oh-my-zsh
 "; then
   echo -e "${r}User cancelled, aborting.${R}" && exit 1
+fi
 
 
 # Initial update and dependancy install
