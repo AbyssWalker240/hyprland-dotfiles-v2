@@ -3,7 +3,7 @@
 OPTIONS="Change Wallpaper
 Calculator
 Network
-Screenshot
+Kill Process
 Power Options"
 
 selection="$(echo "$OPTIONS" | rofi -dmenu -i -p "utilities" \
@@ -19,8 +19,8 @@ case $selection in
   "Network")
     $HOME/.config/waybar/scripts/impala.sh
     ;;
-  "Screenshot")
-    $HOME/.config/hypr/scripts/screenShotMenu.sh
+  "Kill Process")
+    $HOME/.local/bin/scripts/rofi-utils/killmenu.sh
     ;;
   "Power Options")
     $HOME/.config/hypr/scripts/powerMenu.sh
