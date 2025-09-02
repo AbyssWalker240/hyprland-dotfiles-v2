@@ -3,7 +3,7 @@
     "position": "bottom",
     "height": 32,
     "modules-left": ["hyprland/workspaces","custom/nowplaying-title","custom/nowplaying-separator","custom/nowplaying-artist"],
-    "modules-center": ["hyprland/window"],
+    "modules-center": ["hyprland/window","custom/maximized-indicator"],
     "modules-right": ["clock"],
 
     "hyprland/window": {
@@ -42,5 +42,9 @@
     },
     "custom/right-slope": {
         "format": "\u25e2"
+    },
+    "custom/maximized-indicator": {
+        "exec": "~/.config/waybar/scripts/maximized.sh",
+        "interval": 1
     }
 }

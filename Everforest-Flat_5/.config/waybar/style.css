@@ -5,8 +5,7 @@
 }
 
 window#waybar {
-    background: rgba(30,35,38,0.8);  /* 1e2326 with 0% opacity*/
-    color: #a7c080;
+    background: rgba(30,35,38,0.8);  /* 1e2326 with 80% opacity*/
 }
 
 tooltip {
@@ -14,10 +13,17 @@ tooltip {
     border: 2px solid rgba(170,170,170,0.9);
 }
 
+#window {
+    padding: 0 10px;
+    color: #a7c080;
+    border-bottom: 3px solid #495156;
+    border-radius: 0;
+}
+
 #workspaces button {
     padding: 0 6px;
     background: #272e33;
-    border-bottom: 3px solid transparent;
+    border-bottom: 3px solid #495156;
     color: #d3c6aa;
     border-radius: 0;
 }
@@ -41,6 +47,8 @@ tooltip {
     padding: 0 10px;
     color: #d3c6aa;
     background: #272e33;
+    border-bottom: 3px solid #495156;
+    border-radius: 0;
 }
 
 #custom-networkmenu, #custom-wallpaperswap {
@@ -67,4 +75,11 @@ tooltip {
     margin: 0;
     color: #272e33;
     font-size: 32px;
+}
+
+#custom-maximized-indicator {
+    padding: 0 10 0 0px;
+    color: #dbbc7f;
+    border-bottom: 3px solid #495156;
+    border-radius: 0;
 }
