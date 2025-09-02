@@ -70,9 +70,10 @@ custom scripts:
 * tty-clock
 * yay
 
-### broken AUR
+### broken
 
 * ~~spotify-player-full~~ (this package doesn't exist anymore, I have not found the correct replacement yet, maybe spotify-player-bin)
+  * there is a package on the standard repo, however it does not seem to work whatever way I install it, I give up.
 
 ### standard repos (core, extra, multilib)
 
@@ -127,4 +128,8 @@ custom scripts:
 
 ## install script
 
-*coming soon*
+sh $(curl script whatever)
+
+enable hyprexpo
+
+blah blah do later tired
