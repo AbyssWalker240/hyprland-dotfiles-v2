@@ -15,13 +15,13 @@
     },
     "custom/networkmenu": {
         "format": "Network",
-        "on-click": "~/.config/waybar/scripts/impala.sh",
+        "on-click": "~/.local/bin/scripts/waybar-utils/impala.sh",
         "tooltip":false,
         "tooltip-format":"Network Configuration"
     },
     "custom/wallpaperswap": {
         "format": "Wallpaper",
-        "on-click": "~/.config/hypr/scripts/cyclewallv2.sh",
+        "on-click": "~/.local/bin/scripts/waybar-utils/cyclewallv2.sh",
         "tooltip":false,
         "tooltip-format":"Cycle Wallpaper"
     },
@@ -34,7 +34,7 @@
         "interval": 1
     },
     "custom/nowplaying-separator": {
-        "exec": "~/.config/waybar/scripts/display-np-separator.sh ' - '",
+        "exec": "~/.local/bin/scripts/waybar-utils/display-np-separator.sh ' - '",
         "interval": 1
     },
     "custom/left-slope": {
@@ -44,7 +44,7 @@
         "format": "\u25e2"
     },
     "custom/maximized-indicator": {
-        "exec": "~/.config/waybar/scripts/maximized.sh",
+        "exec": "~/.local/bin/scripts/waybar-utils/maximized.sh",
         "interval": 1
     }
 }

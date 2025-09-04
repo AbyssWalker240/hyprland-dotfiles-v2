@@ -11,18 +11,18 @@ selection="$(echo "$OPTIONS" | rofi -dmenu -i -p "utilities" \
 
 case $selection in
   "Change Wallpaper")
-    $HOME/.config/hypr/scripts/cyclewallv2.sh
+    $HOME/.local/bin/scripts/hyprland-utils/cyclewallv2.sh
     ;;
   "Calculator")
     $HOME/.local/bin/scripts/rofi-utils/calc/calc.sh
     ;;
   "Network")
-    $HOME/.config/waybar/scripts/impala.sh
+    $HOME/.local/bin/scripts/waybar-utils/impala.sh
     ;;
   "Kill Process")
     $HOME/.local/bin/scripts/rofi-utils/killmenu.sh
     ;;
   "Power Options")
-    $HOME/.config/hypr/scripts/powerMenu.sh
+    $HOME/.local/bin/scripts/rofi-utils/powerMenu.sh
     ;;
 esac

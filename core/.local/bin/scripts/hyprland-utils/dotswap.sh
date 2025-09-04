@@ -3,7 +3,7 @@
 STOWDIR="$HOME/Dotfiles"
 STOWTARGET="$HOME"
 COREPKG="core"
-RELOADSCRIPT="$HOME/.config/hypr/scripts/reload.sh"
+RELOADSCRIPT="$HOME/.local/bin/scripts/hyprland-utils/reload.sh"
 
 pkglist="$(ls -d $STOWDIR/*/ | awk -F/ '{print $(NF-1)}' | grep -v ^$COREPKG$ \
   | sort -t_ -k2n)"
