@@ -108,8 +108,8 @@ custom scripts:
 * pipewire
 * playerctl
 * python-lsp-server
+* rofi
 * rofi-emoji
-* rofi-wayland
 * rsync
 * stow
 * swww
