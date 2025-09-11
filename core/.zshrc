@@ -83,6 +83,7 @@ alias gpb="getpkgbuild"
 
 
 export PATH="$HOME/.local/bin:$HOME/.local/bin/scripts/utilities:$HOME/.cargo/bin:$PATH"
+export LS_COLORS="*.iso=1;93:$LS_COLORS"
 export EDITOR="/usr/bin/helix"
 export PAGER="/usr/bin/bat --paging=always"
 
