@@ -56,18 +56,25 @@ tooltip {
 }
 
 #custom-nowplaying-title {
-    padding: 0 0 0 200px;
+    margin: 0 0 0 190px;
+    padding: 0 0 0 10px;
     color: #d3c6aa;
+    border-bottom: 3px solid #495156;
+    border-radius: 0;
 }
 
 #custom-nowplaying-separator {
     padding: 0px;
     color: #4f5b50;
+    border-bottom: 3px solid #495156;
+    border-radius: 0;
 }
 
 #custom-nowplaying-artist {
-    padding: 0px;
+    padding: 0 10 0 0px;
     color: #4f5b50; 
+    border-bottom: 3px solid #495156;
+    border-radius: 0;
 }
 
 #custom-left-slope, #custom-right-slope {
