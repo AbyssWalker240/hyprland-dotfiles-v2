@@ -68,13 +68,17 @@
     },
     "custom/volume-icon": {
         "format": " \uf028 ",
-        "tooltip":false
+        "tooltip":false,
+        "on-scroll-up": "wpctl set-volume @DEFAULT_SINK@ 5%+",
+        "on-scroll-down": "wpctl set-volume @DEFAULT_SINK@ 5%-"
     },
     "custom/volume": {
         "exec": "~/.local/bin/scripts/waybar-utils/volume.sh",
         "format": "{}%",
         "interval": 1,
-        "tooltip":false
+        "tooltip":false,
+        "on-scroll-up": "wpctl set-volume @DEFAULT_SINK@ 5%+",
+        "on-scroll-down": "wpctl set-volume @DEFAULT_SINK@ 5%-"
     },
     "custom/spotify-title": {
         "exec": "~/.local/bin/scripts/waybar-utils/spotify.sh title",
