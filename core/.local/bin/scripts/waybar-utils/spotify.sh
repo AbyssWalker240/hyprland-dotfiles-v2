@@ -36,6 +36,9 @@ case "$1" in
   "icon")
     echo -e " \uf1bc "
     ;;
+  "sep")
+    echo "|"
+    ;;
   *)
     exit 1
     ;;

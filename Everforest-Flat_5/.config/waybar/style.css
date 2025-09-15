@@ -104,7 +104,7 @@ tooltip {
     color: #a7c080;
 }
 
-#custom-sep {
+#custom-sep, #custom-spotify-sep {
     padding: 0 8 0 8px;
     color: #495156;
     background: #272e33;
