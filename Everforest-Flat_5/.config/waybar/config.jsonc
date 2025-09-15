@@ -2,15 +2,19 @@
     "layer": "top",
     "position": "bottom",
     "height": 32,
-    "modules-left": ["hyprland/workspaces","custom/nowplaying-title","custom/nowplaying-separator","custom/nowplaying-artist"],
+    "modules-left": ["custom/powermenu","custom/sep","hyprland/workspaces"],
     "modules-center": ["hyprland/window","custom/maximized-indicator"],
-    "modules-right": ["clock"],
+    "modules-right": ["custom/spotify-icon","custom/spotify-title","custom/spotify-artist","custom/spotify-prev","custom/spotify-playpause","custom/spotify-next","custom/sep","custom/volume-icon","custom/volume","custom/sep","custom/clock-icon","clock"],
 
     "hyprland/window": {
         "max-length": 200
     },
     "clock": {
         "format": "{:%a, %b %d  %I:%M %p}",
+        "tooltip":false
+    },
+    "custom/clock-icon": {
+        "format": " \uf017 ",
         "tooltip":false
     },
     "custom/networkmenu": {
@@ -27,24 +31,82 @@
     },
     "custom/nowplaying-title": {
         "exec": "playerctl -p spotify,spotify_player metadata title",
-        "interval": 1
+        "interval": 1,
+        "tooltip":false
     },
     "custom/nowplaying-artist": {
         "exec": "playerctl -p spotify,spotify_player metadata artist",
-        "interval": 1
+        "interval": 1,
+        "tooltip":false
     },
     "custom/nowplaying-separator": {
         "exec": "~/.local/bin/scripts/waybar-utils/display-np-separator.sh ' - '",
-        "interval": 1
+        "interval": 1,
+        "tooltip":false
     },
     "custom/left-slope": {
-        "format": "\u25e3"
+        "format": "\u25e3",
+        "tooltip":false
     },
     "custom/right-slope": {
-        "format": "\u25e2"
+        "format": "\u25e2",
+        "tooltip":false
     },
     "custom/maximized-indicator": {
         "exec": "~/.local/bin/scripts/waybar-utils/maximized.sh",
-        "interval": 1
+        "interval": 1,
+        "tooltip":false
+    },
+    "custom/powermenu": {
+        "format": " \uf011 ",
+        "on-click": "~/.local/bin/scripts/rofi-utils/powerMenu.sh",
+        "tooltip":false
+    },
+    "custom/sep": {
+        "format": "|",
+        "tooltip":false
+    },
+    "custom/volume-icon": {
+        "format": " \uf028 ",
+        "tooltip":false
+    },
+    "custom/volume": {
+        "exec": "~/.local/bin/scripts/waybar-utils/volume.sh",
+        "format": "{}%",
+        "interval": 1,
+        "tooltip":false
+    },
+    "custom/spotify-title": {
+        "exec": "~/.local/bin/scripts/waybar-utils/spotify.sh title",
+        "interval": 1,
+        "tooltip":false
+    },
+    "custom/spotify-artist": {
+        "exec": "~/.local/bin/scripts/waybar-utils/spotify.sh artist",
+        "interval": 1,
+        "tooltip":false
+    },
+    "custom/spotify-prev": {
+        "exec": "~/.local/bin/scripts/waybar-utils/spotify.sh prev",
+        "interval": 1,
+        "on-click": "playerctl -p spotify,spotify_player previous",
+        "tooltip":false
+    },
+    "custom/spotify-playpause": {
+        "exec": "~/.local/bin/scripts/waybar-utils/spotify.sh playpause",
+        "interval": 1,
+        "on-click": "playerctl -p spotify,spotify_player play-pause",
+        "tooltip":false
+    },
+    "custom/spotify-next": {
+        "exec": "~/.local/bin/scripts/waybar-utils/spotify.sh next",
+        "interval": 1,
+        "on-click": "playerctl -p spotify,spotify_player next",
+        "tooltip":false
+    },
+    "custom/spotify-icon": {
+        "exec": "~/.local/bin/scripts/waybar-utils/spotify.sh icon",
+        "interval": 1,
+        "tooltip":false
     }
 }

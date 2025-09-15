@@ -43,7 +43,7 @@ tooltip {
     color: #a7c080;
 }
 
-#mode, #clock, #battery { 
+#mode, #clock, #battery, #custom-volume { 
     padding: 0 10px;
     color: #d3c6aa;
     background: #272e33;
@@ -86,7 +86,74 @@ tooltip {
 
 #custom-maximized-indicator {
     padding: 0 10 0 0px;
-    color: #dbbc7f;
+    color: #ebbc7f;
+    border-bottom: 3px solid #495156;
+    border-radius: 0;
+}
+
+#custom-powermenu {
+    padding: 0 2 0 5px;
+    color: #d699b6;
+    background: #272e33;
+    border-bottom: 3px solid #495156;
+    border-radius: 0;
+}
+
+#custom-powermenu:hover {
+    background: #2e383c;
+    color: #a7c080;
+}
+
+#custom-sep {
+    padding: 0 8 0 8px;
+    color: #495156;
+    background: #272e33;
+    border-bottom: 3px solid #495156;
+    border-radius: 0;
+    font-size: 22;
+}
+
+#custom-clock-icon, #custom-volume-icon {
+    padding: 0px;
+    color: #d699b6;
+    background: #272e33;
+    border-bottom: 3px solid #495156;
+    border-radius: 0;
+}
+
+#custom-spotify-title {
+    padding: 0 0 0 10px;
+    color: #d3c6aa;
+    background: #272e33;
+    border-bottom: 3px solid #495156;
+    border-radius: 0;
+}
+
+#custom-spotify-artist {
+    padding: 0 10 0 0px;
+    color: #9da9a0; 
+    background: #272e33;
+    border-bottom: 3px solid #495156;
+    border-radius: 0;
+}
+
+#custom-spotify-prev, #custom-spotify-playpause, #custom-spotify-next {
+    padding: 0px;
+    color: #ebbc7f;
+    background: #272e33;
+    border-bottom: 3px solid #495156;
+    border-radius: 0;
+}
+
+#custom-spotify-prev:hover, #custom-spotify-playpause:hover, #custom-spotify-next:hover {
+    background: #2e383c;
+    color: #a7c080;
+}
+
+#custom-spotify-icon {
+    padding: 0px;
+    color: #d699b6;
+    background: #272e33;
     border-bottom: 3px solid #495156;
     border-radius: 0;
 }
