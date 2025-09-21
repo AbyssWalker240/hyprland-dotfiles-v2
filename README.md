@@ -10,7 +10,7 @@
 ```
 
 # hyprland-dotfiles-v2
-My personal hyprland dotfiles, organized for use with stow.
+My personal hyprland dotfiles, organized for use with stow. Niri configuration also included!
 
 **NOTE:** these are my personal configurations, and will change based on my needs. It is a good starting point to create your own setup.
 * I would recommend cloning this then tweaking to your hearts content for your own use.
@@ -37,11 +37,10 @@ custom scripts:
 
 ## todo
 
+* [ ] Add *Niri* configuration
 * [ ] Finalize yazi styling for *ArchChan* package
-* [ ] Install script
-* [ ] Relocate all scripts into '~/.local/bin/custom' (subfolders so they are not accessible in *$PATH*) 
-* [x] Script to automatically create and manage backups with rsync to crucial, store only the latest few backups
-* [x] Rofi menu for switching between themes that automatically handles reloading where possible
+* [x] Install script
+* [x] Relocate all scripts into '~/.local/bin/custom' (subfolders so they are not accessible in *$PATH*) 
 
 ### themes
 
@@ -102,6 +101,7 @@ custom scripts:
 * krita
 * lolcat
 * micro
+* niri
 * noto-fonts-cjk
 * noto-fonts-emoji
 * pavucontrol
@@ -116,6 +116,8 @@ custom scripts:
 * tree
 * ttf-ubuntu-font-family
 * waybar
+* xdg-desktop-portal-gnome
+* xwayland-satellite
 * yazi
 * zoxide
 * zsh-autosuggestions
