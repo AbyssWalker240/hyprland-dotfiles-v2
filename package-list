@@ -1,4 +1,3 @@
-ascii-image-converter-git
 cbonsai
 clipse
 kanata
@@ -32,6 +31,7 @@ kitty
 krita
 lolcat
 micro
+niri
 noto-fonts-cjk
 noto-fonts-emoji
 pavucontrol
@@ -46,6 +46,8 @@ swww
 tree
 ttf-ubuntu-font-family
 waybar
+xdg-desktop-portal-gnome
+xwayland-satellite
 yazi
 zoxide
 zsh-autosuggestions

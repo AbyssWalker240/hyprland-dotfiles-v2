@@ -59,7 +59,6 @@ custom scripts:
 
 ### AUR
 
-* ascii-image-converter-git
 * cbonsai
 * clipse
 * kanata
@@ -73,6 +72,7 @@ custom scripts:
 
 * ~~spotify-player-full~~ (this package doesn't exist anymore, I have not found the correct replacement yet, maybe spotify-player-bin)
   * there is a package on the standard repo, however it does not seem to work whatever way I install it, I give up.
+* ascii-image-converter-git
 
 ### standard repos (core, extra, multilib)
 
