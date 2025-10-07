@@ -7,5 +7,5 @@ killall dunst
 killall waybar
 waybar &> /dev/null & pkill -SIGUSR1 kitty
 hyprctl reload &> /dev/null
-$HOME/.config/hypr/scripts/cyclewallv2.sh --default
+$HOME/.local/bin/scripts/hyprland-utils/cyclewallv2.sh --default
 dunstify "Configs reloaded" -r 241 -i /dev/null
