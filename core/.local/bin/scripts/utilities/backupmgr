@@ -30,7 +30,7 @@ function prune() {
       
       if [ -z "$selection" ] || [ "$selection" = "y" ] || [ "$selection" = "Y" ]; then
         echo -e "${RED}\nStatus: ${RESET}Deleting '${file_name}'"
-        rm -rf "$file"
+        sudo rm -rf "$file"
       else
         echo -e "${GREEN}Status: ${RESET}File preserved"
       fi
