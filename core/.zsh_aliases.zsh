@@ -5,6 +5,8 @@ alias m="micro"
 
 alias icat="kitty icat"
 
+alias get-hyprland-error-log="cat $XDG_RUNTIME_DIR/hypr/$(ls -t $XDG_RUNTIME_DIR/hypr/ | head -n 1)/hyprland.log | helix"
+
 alias fastfetch="\clear && echo && fastfetch"
 alias smallfetch="fastfetch --config ~/.config/fastfetch/config-small.jsonc"
 
