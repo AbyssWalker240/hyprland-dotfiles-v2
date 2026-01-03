@@ -32,7 +32,7 @@ eval "$(fzf --zsh)"
 
 
 export PATH="$HOME/.local/bin:$HOME/.local/bin/scripts/utilities:$HOME/.cargo/bin:$PATH"
-export LS_COLORS="*.iso=1;93:$LS_COLORS"
+export LS_COLORS="*.gcode=3;92:*.3mf=1;92:*.stl=3;91:*.obj=3;91:*.step=3;91:*.iso=1;93:$LS_COLORS"
 export EDITOR="/usr/bin/helix"
 export PAGER="/usr/bin/bat --paging=always"
 
