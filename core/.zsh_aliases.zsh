@@ -36,6 +36,9 @@ alias forecast="curl wttr.in/48638\?u"
 alias wttr="weather"
 
 
+alias waitenter="printf \"Press 'Enter' to continue\" && read"
+
+
 distorage () {
 	echo
 	df -h -x tmpfs -x efivarfs -x vfat -x devtmpfs --output=target,used,avail,pcent
