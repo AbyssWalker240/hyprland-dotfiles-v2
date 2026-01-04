@@ -22,6 +22,8 @@ else
 	source $HOME/.zsh_prompt.zsh
 fi
 
+export SUDO_PROMPT="$(tput setaf 1 bold)[sudo] Password for %p:$(tput sgr0) "
+
 source $HOME/.zsh_funnies.zsh
 
 source $HOME/.zsh_aliases.zsh
