@@ -4,7 +4,7 @@
     "height": 32,
     "modules-left": ["custom/powermenu","custom/sep","hyprland/workspaces"],
     "modules-center": ["hyprland/window","custom/maximized-indicator"],
-    "modules-right": ["custom/spotify-icon","custom/spotify-title","custom/spotify-artist","custom/spotify-prev","custom/spotify-playpause","custom/spotify-next","custom/spotify-sep","custom/volume-icon","custom/volume","custom/sep","custom/clock-icon","clock"],
+    "modules-right": ["custom/spotify-icon","custom/spotify-title","custom/spotify-artist","custom/spotify-prev","custom/spotify-playpause","custom/spotify-next","custom/spotify-sep","custom/wlsun-icon","custom/wlsun-status","custom/sep","custom/volume-icon","custom/volume","custom/sep","custom/clock-icon","clock"],
 
     "hyprland/window": {
         "max-length": 200
@@ -116,6 +116,16 @@
     "custom/spotify-sep": {
         "exec": "~/.local/bin/scripts/waybar-utils/spotify.sh sep",
         "interval": 1,
+        "tooltip":false
+    },
+    "custom/wlsun-icon": {
+        "format": " \u25d0 ",
+        "tooltip":false
+    },
+    "custom/wlsun-status": {
+        "exec": "~/.local/bin/scripts/waybar-utils/wl-sunset.sh query",
+        "interval": 5,
+        "on-click": "~/.local/bin/scripts/waybar-utils/wl-sunset.sh toggle",
         "tooltip":false
     }
 }
