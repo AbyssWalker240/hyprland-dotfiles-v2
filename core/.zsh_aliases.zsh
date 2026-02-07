@@ -3,6 +3,8 @@ alias cls="clear"
 alias hx="helix"
 alias m="micro"
 
+alias start="start-hyprland"
+
 alias icat="kitty icat"
 
 alias get-hyprland-error-log="cat $XDG_RUNTIME_DIR/hypr/$(ls -t $XDG_RUNTIME_DIR/hypr/ | head -n 1)/hyprland.log | helix"
