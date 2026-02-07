@@ -16,7 +16,7 @@
         "nextPage": "right",
         "prevPage": "left",
         "preview": " ",
-        "quit": "q",
+        "quit": "esc",
         "remove": "x",
         "selectDown": "ctrl+down",
         "selectSingle": "s",
