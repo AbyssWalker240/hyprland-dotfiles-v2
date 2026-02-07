@@ -7,7 +7,9 @@
     "modules-right": ["custom/spotify-icon","custom/spotify-title","custom/spotify-artist","custom/spotify-prev","custom/spotify-playpause","custom/spotify-next","custom/spotify-sep","custom/wlsun-icon","custom/wlsun-status","custom/sep","custom/volume-icon","custom/volume","custom/sep","custom/clock-icon","clock"],
 
     "hyprland/window": {
-        "max-length": 200
+        "max-length": 200,
+        "min-length": 10,
+        "on-click": "ps -eo pid,cmd | grep '[w]aybar -c /home/rosetta/.config/waybar/dock.jsonc' | awk '{print $1}' | xargs kill ; waybar -c $HOME/.config/waybar/dock.jsonc"
     },
     "clock": {
         "format": "{:%a, %b %d  %I:%M %p}",

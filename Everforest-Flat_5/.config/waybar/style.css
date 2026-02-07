@@ -4,6 +4,10 @@
     font-size: 16px;
 }
 
+window.dock#waybar {
+    border: 2px solid #374145;
+}
+
 window#waybar {
     background: #1e2326;
 }
@@ -18,6 +22,11 @@ tooltip {
     color: #a7c080;
     border-bottom: 3px solid #495156;
     border-radius: 0;
+}
+
+#window:hover {
+    background: #2e383c;
+    border-bottom: 3px solid #859289;
 }
 
 #workspaces button {
@@ -153,4 +162,94 @@ tooltip {
 #custom-wlsun-status:hover {
     background: #2e383c;
     color: #a7c080;
+}
+
+
+
+#custom-exit {
+    color: #e67390;
+    padding: 0 10;
+    background: #4c3743;
+    border-top: 2px solid #374145;
+    border-right: 2px solid #374145;
+    border-bottom: 2px solid #374145;
+}
+#custom-exit:hover {
+    color: #d699b6;
+    background: #804a5e;
+    border-top: 2px solid #374145;
+    border-right: 2px solid #374145;
+    border-bottom: 2px solid #374145;
+}
+
+#custom-firefox {
+    color: #e69875;
+    padding: 0 10;
+    border-left: 2px solid #374145;
+}
+#custom-firefox:hover {
+    background: #272e33;
+    border-top: 2px solid #374145;
+    border-left: 2px solid #374145;
+    border-bottom: 2px solid #374145;
+}
+
+#custom-firefoxprivate {
+    color: #d699b6;
+    padding: 0 10;
+}
+#custom-firefoxprivate:hover {
+    background: #272e33;
+    border-top: 2px solid #374145;
+    border-bottom: 2px solid #374145;
+}
+
+#custom-spotify {
+    color: #83c092;
+    padding: 0 10;
+}
+#custom-spotify:hover {
+    background: #272e33;
+    border-top: 2px solid #374145;
+    border-bottom: 2px solid #374145;
+}
+
+#custom-steam {
+    color: #6082d9;
+    padding: 0 10;
+}
+#custom-steam:hover {
+    background: #272e33;
+    border-top: 2px solid #374145;
+    border-bottom: 2px solid #374145;
+}
+
+#custom-discord {
+    color: #7669f5;
+    padding: 0 10;
+}
+#custom-discord:hover {
+    background: #272e33;
+    border-top: 2px solid #374145;
+    border-bottom: 2px solid #374145;
+}
+
+#custom-btop {
+    color: #d3c6aa;
+    padding: 0 10;
+}
+#custom-btop:hover {
+    background: #272e33;
+    border-top: 2px solid #374145;
+    border-bottom: 2px solid #374145;
+}
+
+#custom-terminal {
+    color: #9da9a0;
+    padding: 0 10;
+}
+#custom-terminal:hover {
+    background: #272e33;
+    border-top: 2px solid #374145;
+    border-bottom: 2px solid #374145;
 }

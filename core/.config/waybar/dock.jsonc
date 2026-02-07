@@ -1,0 +1,56 @@
+
+{
+    "layer": "top",
+    "position": "bottom",
+    "name": "dock",
+    "exclusive": false,
+    "width": 50,
+    "height": 40,
+    "margin-bottom": 20,
+    // "spacing": 20,
+    "modules-left": [],
+    "modules-center": ["custom/firefox","custom/firefoxprivate","custom/spotify","custom/steam","custom/discord","custom/terminal","custom/btop","custom/exit"],
+    "modules-right": [],
+
+    "custom/exit": {
+        "format": "Close",
+        "on-click": "ps -eo pid,cmd | grep '[w]aybar -c /home/rosetta/.config/waybar/dock.jsonc' | awk '{print $1}' | xargs kill",
+        "tooltip": false
+    },
+    "custom/firefox": {
+        "format": "Firefox",
+        "on-click": "firefox & ps -eo pid,cmd | grep '[w]aybar -c /home/rosetta/.config/waybar/dock.jsonc' | awk '{print $1}' | xargs kill",
+        "tooltip": false
+    },
+    "custom/firefoxprivate": {
+        "format": "Firefox Private",
+        "on-click": "firefox --private-window & ps -eo pid,cmd | grep '[w]aybar -c /home/rosetta/.config/waybar/dock.jsonc' | awk '{print $1}' | xargs kill",
+        "tooltip": false
+    },
+    "custom/spotify": {
+        "format": "Spotify",
+        "on-click": "spotify-launcher & ps -eo pid,cmd | grep '[w]aybar -c /home/rosetta/.config/waybar/dock.jsonc' | awk '{print $1}' | xargs kill",
+        "tooltip": false
+    },
+    "custom/steam": {
+        "format": "Steam",
+        "on-click": "steam & ps -eo pid,cmd | grep '[w]aybar -c /home/rosetta/.config/waybar/dock.jsonc' | awk '{print $1}' | xargs kill",
+        "tooltip": false
+    },
+    "custom/discord": {
+        "format": "Discord",
+        "on-click": "discord & ps -eo pid,cmd | grep '[w]aybar -c /home/rosetta/.config/waybar/dock.jsonc' | awk '{print $1}' | xargs kill",
+        "tooltip": false
+    },
+    "custom/terminal": {
+        "format": "Terminal",
+        "on-click": "kitty & ps -eo pid,cmd | grep '[w]aybar -c /home/rosetta/.config/waybar/dock.jsonc' | awk '{print $1}' | xargs kill",
+        "tooltip": false
+    },
+    "custom/btop": {
+        "format": "Btop",
+        "on-click": "kitty -e btop & ps -eo pid,cmd | grep '[w]aybar -c /home/rosetta/.config/waybar/dock.jsonc' | awk '{print $1}' | xargs kill",
+        "tooltip": false
+    }
+}
+
