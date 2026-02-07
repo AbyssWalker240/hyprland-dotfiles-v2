@@ -116,6 +116,7 @@ custom scripts:
 * tree
 * ttf-ubuntu-font-family
 * waybar
+* wlsunset
 * xdg-desktop-portal-gnome
 * xwayland-satellite
 * yazi
