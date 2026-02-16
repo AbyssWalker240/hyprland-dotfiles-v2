@@ -9,7 +9,8 @@
     "hyprland/window": {
         "max-length": 200,
         "min-length": 10,
-        "on-click": "ps -eo pid,cmd | grep '[w]aybar -c /home/rosetta/.config/waybar/dock.jsonc' | awk '{print $1}' | xargs kill ; waybar -c $HOME/.config/waybar/dock.jsonc"
+        "on-click": "ps -eo pid,cmd | grep '[w]aybar -c /home/rosetta/.config/waybar/dock.jsonc' | awk '{print $1}' | xargs kill ; waybar -c $HOME/.config/waybar/dock.jsonc",
+        "tooltip":false
     },
     "clock": {
         "format": "{:%a, %b %d  %I:%M %p}",
