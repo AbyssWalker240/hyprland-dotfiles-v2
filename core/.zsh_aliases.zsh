@@ -5,9 +5,12 @@ alias m="micro"
 
 alias start="start-hyprland"
 
+alias yaysd="yay -Syu --noconfirm && systemctl poweroff"
+
 alias icat="kitty icat"
 
-alias get-hyprland-error-log="cat $XDG_RUNTIME_DIR/hypr/$(ls -t $XDG_RUNTIME_DIR/hypr/ | head -n 1)/hyprland.log | helix"
+# # ---- Causing error in tty or other display sessions due to subshells trying to find hyprland runtime files when it's not running, enable when needed (hopefully never)
+# alias get-hyprland-error-log="cat $XDG_RUNTIME_DIR/hypr/$(ls -t $XDG_RUNTIME_DIR/hypr/ | head -n 1)/hyprland.log | helix"
 
 alias fastfetch="\clear && echo && fastfetch"
 alias smallfetch="fastfetch --config ~/.config/fastfetch/config-small.jsonc"
