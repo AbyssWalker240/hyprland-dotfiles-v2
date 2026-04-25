@@ -6,6 +6,7 @@ alias m="micro"
 alias start="start-hyprland"
 
 alias yaysd="yay -Syu --noconfirm && systemctl poweroff"
+alias yayrb="yay -Syu --noconfirm && systemctl reboot"
 
 alias icat="kitty icat"
 
