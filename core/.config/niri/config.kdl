@@ -1,6 +1,6 @@
 spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
 spawn-sh-at-startup "waybar -c $HOME/.config/waybar/config.niri.jsonc"
-spawn-at-startup "swww-daemon"
+spawn-at-startup "awww-daemon"
 spawn-sh-at-startup "clipse -listen"
 
 spawn-at-startup "gsettings set org.gnome.desktop.interface cursor-theme BreezeX-RosePine-Linux"
