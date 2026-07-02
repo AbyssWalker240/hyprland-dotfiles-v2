@@ -1,4 +1,4 @@
-require("variables.lua")
+require("variables")
 
 
 -- MAIN BINDS
@@ -73,16 +73,16 @@ hl.bind("SUPER + left", hl.dsp.focus({direction = "l"}))
 hl.bind("SUPER + right", hl.dsp.focus({direction = "r"}))
 hl.bind("SUPER + up", hl.dsp.focus({direction = "u"}))
 hl.bind("SUPER + down", hl.dsp.focus({direction = "d"}))
-hl.bind("SUPER + SHFT + left", hl.dsp.window.swap({direction = "l"}))
-hl.bind("SUPER + SHFT + right", hl.dsp.window.swap({direction = "r"}))
-hl.bind("SUPER + SHFT + up", hl.dsp.window.swap({direction = "u"}))
-hl.bind("SUPER + SHFT + down", hl.dsp.window.swap({direction = "d"}))
+hl.bind("SUPER + SHIFT + left", hl.dsp.window.swap({direction = "l"}))
+hl.bind("SUPER + SHIFT + right", hl.dsp.window.swap({direction = "r"}))
+hl.bind("SUPER + SHIFT + up", hl.dsp.window.swap({direction = "u"}))
+hl.bind("SUPER + SHIFT + down", hl.dsp.window.swap({direction = "d"}))
 
 
 -- WINDOW MOVE AND RESIZE WITH MOUSE
 
-hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
-hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
+hl.bind("SUPER + mouse:272", hl.dsp.window.drag(),   { mouse = true })
+hl.bind("SUPER + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 
 -- MULTIMEDIA CONTROLS

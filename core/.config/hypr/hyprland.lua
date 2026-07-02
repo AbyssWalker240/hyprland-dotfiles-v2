@@ -1,5 +1,5 @@
-require("startenv.lua")
-require("style.lua")
+require("startenv")
+require("style")
 
 hl.config({
   general = {
@@ -24,5 +24,5 @@ hl.config({
   },
 })
 
-require(binds.lua)
-require(rules.lua)
+require("binds")
+require("rules")
