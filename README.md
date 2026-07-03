@@ -14,7 +14,6 @@ My personal hyprland dotfiles, organized for use with stow. Niri configuration a
 
 **NOTE:** these are my personal configurations, and will change based on my needs. It is a good starting point to create your own setup.
 * I would recommend cloning this then tweaking to your hearts content for your own use.
-* Another repo of interest is [AbyssWalker240/dotswap](https://github.com/AbyssWalker240/dotswap), which is just the script that allows for easy switching of themes, and allows for you to set up your own configuration.  This script makes my whole setup possible.
 
 ## what is included
 my personal configurations for:
@@ -30,17 +29,13 @@ my personal configurations for:
 * and yazi
 
 custom scripts:
-* changing themes using stow
 * make new/delete old backups with a simple rsync script
 * easy install script
 * small tool to help vent frustration
 
 ## todo
 
-* [ ] Add *Niri* configuration
-* [ ] Finalize yazi styling for *ArchChan* package
-* [x] Install script
-* [x] Relocate all scripts into '~/.local/bin/custom' (subfolders so they are not accessible in *$PATH*) 
+* [ ] Create a submap indicator on waybar that only shows up when in launchpad mode (using an sh script that uses hyprctl to querry submap and only return launchpad if it is active)
 
 ### themes
 
