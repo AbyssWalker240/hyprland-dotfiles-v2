@@ -9,6 +9,7 @@ alias yaysd="yay -Syu --noconfirm && echo -e '\e[1;91m
 ctrl+c to stop system poweroff' && sleep 10 && systemctl poweroff"
 alias yayrb="yay -Syu --noconfirm && echo -e '\e[1;91m
 ctrl+c to stop system reboot' && sleep 10 && systemctl reboot"
+alias yaync="yay -Syu --noconfirm"
 
 alias logout="loginctl terminate-user $USER"
 
