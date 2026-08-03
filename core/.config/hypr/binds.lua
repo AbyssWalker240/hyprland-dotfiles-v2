@@ -81,7 +81,6 @@ end
 -- Special Workspace
 hl.bind("SUPER + s", hl.dsp.workspace.toggle_special("special"))
 hl.bind("SUPER + SHIFT + s", hl.dsp.window.move({workspace = "special:special", follow = false}))
-hl.bind("SUPER + ALT + s", hl.dsp.window.move({workspace = "special:special", follow = true}))
 
 
 -- WINDOW SWITCHING AND MOVING
