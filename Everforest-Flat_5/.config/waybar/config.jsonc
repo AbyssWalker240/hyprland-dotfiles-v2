@@ -90,11 +90,13 @@
     "custom/spotify-title": {
         "exec": "~/.local/bin/scripts/waybar-utils/spotify.sh title",
         "interval": 1,
+        "escape": true,
         "tooltip": false
     },
     "custom/spotify-artist": {
         "exec": "~/.local/bin/scripts/waybar-utils/spotify.sh artist",
         "interval": 1,
+        "escape": true,
         "tooltip": false
     },
     "custom/spotify-prev": {
