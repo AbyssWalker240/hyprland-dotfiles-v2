@@ -15,7 +15,7 @@ hl.bind("SUPER + b", hl.dsp.exec_cmd("pkill -SIGUSR1 waybar"))
 
 -- LAUNCHER MODE
 
-hl.define_submap("launchpad", function()
+hl.define_submap("LAUNCHPAD", function()
     hl.bind("f", hl.dsp.exec_cmd("firefox"), {auto_consuming = true})
     hl.bind("SHIFT + f", hl.dsp.exec_cmd("firefox --private-window"), {auto_consuming = true})
     hl.bind("s", hl.dsp.exec_cmd("spotify_launcher"), {auto_consuming = true})
@@ -24,10 +24,11 @@ hl.define_submap("launchpad", function()
     hl.bind("o", hl.dsp.exec_cmd("com.obsproject.Studio"), {auto_consuming = true})
     hl.bind("v", hl.dsp.exec_cmd("virt-manager"), {auto_consuming = true})
     hl.bind("b", hl.dsp.exec_cmd("bambu-studio"), {auto_consuming = true})
+    hl.bind("SUPER + CONTROL + d", hl.dsp.submap("reset"), {auto_consuming = true})
     hl.bind("escape", hl.dsp.submap("reset"), {auto_consuming = false})
 end)
 
-hl.bind("SUPER + CONTROL + d", hl.dsp.submap("launchpad"))
+hl.bind("SUPER + CONTROL + d", hl.dsp.submap("LAUNCHPAD"))
 
 
 -- SCREENSHOTTING

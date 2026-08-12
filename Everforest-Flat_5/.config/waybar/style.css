@@ -253,3 +253,19 @@ tooltip {
     border-top: 2px solid #374145;
     border-bottom: 2px solid #374145;
 }
+
+#submap{
+    padding: 0 10;
+    margin: 0 20;
+}
+
+#submap.LAUNCHPAD {
+    color: #1e2326;
+    background: #dbbc7f;
+    margin: 0 25;
+    font-weight: bold;
+}
+
+#submap.NOR {
+    color: #859289;
+}
