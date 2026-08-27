@@ -14,6 +14,10 @@ hl.config({
     smart_split = true,
   },
 
+  scrolling = {
+    fullscreen_on_one_column = false,
+  },
+
   misc = {
     disable_hyprland_logo = true,
   },

@@ -92,8 +92,6 @@ hl.window_rule({match = {class = "(explorer.exe)"},
 
 hl.window_rule({match = {class = "(discord)", initial_title = "(^Discord$)"},
     workspace = "3",
-    pseudo = true,
-    size = "(monitor_w*0.5) (monitor_h*1)",
 })
 
 hl.window_rule({match = {class = "(discord)", initial_title = "(^Discord Updater$)"},
@@ -109,14 +107,10 @@ hl.window_rule({match = {class = "(discord)", initial_title = "(^Discord Popout$
 
 hl.window_rule({match = {class = "(Spotify)"},
     workspace = "3",
-    pseudo = true,
-    size = "(monitor_w*0.5) (monitor_h*1)",
 })
 
 hl.window_rule({match = {class = "(spotifyplayer)"},
     workspace = "3",
-    pseudo = true,
-    size = "(monitor_w*0.5) (monitor_h*1)",
 })
 
 
@@ -136,7 +130,7 @@ hl.layer_rule({match = {namespace = "notifications"}, blur = true, ignore_alpha 
 -- Workspace Rules
 hl.workspace_rule({workspace = "1", persistent = true})
 hl.workspace_rule({workspace = "2", persistent = true})
-hl.workspace_rule({workspace = "3", persistent = true})
+hl.workspace_rule({workspace = "3", persistent = true, layout = "scrolling"})
 
 -- Ignore maximize requests from apps. You'll probably like this.
 hl.window_rule({match = {class = ".*"}, suppress_event = "maximize"})
