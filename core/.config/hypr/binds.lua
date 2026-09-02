@@ -15,7 +15,7 @@ hl.bind("SUPER + b", hl.dsp.exec_cmd("pkill -SIGUSR1 waybar"))
 
 -- LAUNCHER MODE
 
-hl.define_submap("LAUNCHPAD", function()
+hl.define_submap("LAUNCHPAD", "reset", function()
     hl.bind("f", hl.dsp.exec_cmd("firefox"), {auto_consuming = true})
     hl.bind("SHIFT + f", hl.dsp.exec_cmd("firefox --private-window"), {auto_consuming = true})
     hl.bind("s", hl.dsp.exec_cmd("spotify_launcher"), {auto_consuming = true})
@@ -25,6 +25,7 @@ hl.define_submap("LAUNCHPAD", function()
     hl.bind("v", hl.dsp.exec_cmd("virt-manager"), {auto_consuming = true})
     hl.bind("b", hl.dsp.exec_cmd("bambu-studio"), {auto_consuming = true})
     hl.bind("c", hl.dsp.exec_cmd("/home/rosetta/git/appImages/CurseForge.AppImage"), {auto_consuming = true})
+    hl.bind("w", hl.dsp.exec_cmd("firefox --new-window 'https://wiki.hypr.land/configuring/'"), {auto_consuming = true})
     hl.bind("SUPER + CONTROL + d", hl.dsp.submap("reset"), {auto_consuming = true})
     hl.bind("escape", hl.dsp.submap("reset"), {auto_consuming = false})
 end)
@@ -45,13 +46,19 @@ hl.bind("pause", hl.dsp.exec_cmd(kmenu))
 hl.bind("scroll_lock", hl.dsp.exec_cmd(utilmenu))
 
 
--- LAYOUT
+-- WINDOW
 
 hl.bind("SUPER + CONTROL + space", hl.dsp.window.float({action = "toggle", window = "activewindow"}))
 hl.bind("SUPER + f", hl.dsp.window.fullscreen({mode = "fullscreen", action = "toggle", window = "activewindow"}))
 hl.bind("SUPER + m", hl.dsp.window.fullscreen({mode = "maximized", action = "toggle", window = "activewindow"}))
 hl.bind("SUPER + ALT + c", hl.dsp.window.center({window = "activewindow"}))
 hl.bind("SUPER + p", hl.dsp.window.pseudo("active"))
+
+
+-- SCROLLING LAYOUT
+
+hl.bind("SUPER + CONTROL + left", hl.dsp.layout("consume_or_expel prev"))
+hl.bind("SUPER + CONTROL + right", hl.dsp.layout("consume_or_expel next"))
 
 
 -- ROFI

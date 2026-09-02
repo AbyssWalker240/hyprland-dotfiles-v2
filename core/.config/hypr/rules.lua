@@ -122,18 +122,21 @@ hl.window_rule({match = {class = "(^blender$)", title = "(^Blender File View$)"}
     size = "(monitor_w*0.25) (monitor_h*0.25)",
 })
 
--- Layer Rules
+-- LAYER RULES
 hl.layer_rule({match = {namespace = "rofi"}, blur = true, ignore_alpha = 0})
 hl.layer_rule({match = {namespace = "waybar"}, blur = true, ignore_alpha = 0})
 hl.layer_rule({match = {namespace = "notifications"}, blur = true, ignore_alpha = 0})
 
--- Workspace Rules
+
+-- WORKSPACE RULES
 hl.workspace_rule({workspace = "1", persistent = true})
 hl.workspace_rule({workspace = "2", persistent = true})
 hl.workspace_rule({workspace = "3", persistent = true, layout = "scrolling"})
 
+
 -- Ignore maximize requests from apps. You'll probably like this.
 hl.window_rule({match = {class = ".*"}, suppress_event = "maximize"})
+
 
 -- Fix some dragging issues with XWayland
 hl.window_rule({
