@@ -6,7 +6,7 @@ hl.config({
     resize_on_border = false,
     allow_tearing = false,
 
-    layout = "dwindle",
+    layout = "scrolling",
   },
 
   dwindle = {
@@ -15,7 +15,7 @@ hl.config({
   },
 
   scrolling = {
-    fullscreen_on_one_column = false,
+    explicit_column_widths = "0.333, 0.5, 0.667, 1.0"
   },
 
   misc = {

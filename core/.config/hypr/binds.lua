@@ -59,6 +59,10 @@ hl.bind("SUPER + p", hl.dsp.window.pseudo("active"))
 
 hl.bind("SUPER + CONTROL + left", hl.dsp.layout("consume_or_expel prev"))
 hl.bind("SUPER + CONTROL + right", hl.dsp.layout("consume_or_expel next"))
+hl.bind("SUPER + ALT + left", hl.dsp.layout("colresize -conf"))
+hl.bind("SUPER + ALT + right", hl.dsp.layout("colresize +conf"))
+hl.bind("SUPER + minus", hl.dsp.layout("colresize all 0.333"))
+hl.bind("SUPER + equal", hl.dsp.layout("colresize all 0.5"))
 
 
 -- ROFI
