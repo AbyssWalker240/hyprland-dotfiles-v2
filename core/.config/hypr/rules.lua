@@ -131,7 +131,7 @@ hl.layer_rule({match = {namespace = "notifications"}, blur = true, ignore_alpha 
 -- WORKSPACE RULES
 hl.workspace_rule({workspace = "1", persistent = true})
 hl.workspace_rule({workspace = "2", persistent = true})
-hl.workspace_rule({workspace = "3", persistent = true, layout_opts = {fullscreen_on_one_column = false}})
+hl.workspace_rule({workspace = "3", persistent = true})
 
 
 -- Ignore maximize requests from apps. You'll probably like this.
