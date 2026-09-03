@@ -60,7 +60,7 @@ hl.window_rule({match = {title = "(^Steam$)"},
 -- Games
 hl.window_rule({match = {class = "(^steam_app.*$)", title = "(^No Man's Sky$)"},
     workspace = "2",
-    fullscreen = true,
+    -- fullscreen = true,
 })
 
 hl.window_rule({match = {class = "(^steam_app.*$)", title = "(^Stardew Valley$)"},
@@ -92,7 +92,6 @@ hl.window_rule({match = {class = "(explorer.exe)"},
 
 hl.window_rule({match = {class = "(discord)", initial_title = "(^Discord$)"},
     workspace = "3",
-    size = "1709 1394",
 })
 
 hl.window_rule({match = {class = "(discord)", initial_title = "(^Discord Updater$)"},
@@ -108,12 +107,10 @@ hl.window_rule({match = {class = "(discord)", initial_title = "(^Discord Popout$
 
 hl.window_rule({match = {class = "(Spotify)"},
     workspace = "3",
-    size = "1709 1394",
 })
 
 hl.window_rule({match = {class = "(spotifyplayer)"},
     workspace = "3",
-    size = "1709 1394",
 })
 
 
