@@ -68,6 +68,11 @@ hl.window_rule({match = {class = "(^steam_app.*$)", title = "(^Stardew Valley$)"
     fullscreen = true,
 })
 
+hl.window_rule({match = {class = "(^steam_app.*$)", title = "(^Forza Horizon 6$)"},
+    workspace = "2",
+    fullscreen = true,
+})
+
 hl.window_rule({match = {class = "(heroic)"},
     workspace = "2",
     pseudo = true,
