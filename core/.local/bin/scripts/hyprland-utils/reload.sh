@@ -4,7 +4,7 @@ ffplay -nodisp -autoexit -volume 40 -af "atempo=2.0" \
   $HOME/.local/share/dotswap-assets/robot1.wav &> /dev/null & \
   dunstify "Reloading configs..." -r 241 -i /dev/null
 killall dunst
-killall waybar
+dunst & killall waybar
 waybar &> /dev/null & pkill -SIGUSR1 kitty
 hyprctl reload &> /dev/null
 $HOME/.local/bin/scripts/hyprland-utils/cyclewallv2.sh --default

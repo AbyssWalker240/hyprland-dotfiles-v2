@@ -282,3 +282,8 @@
 appname = "dunstify"
 summary = "Volume"
 format = "<span font='Ubuntu-M 18'><b>%s  </b></span><span font='Ubuntu-M 20'>%b</span>"
+
+[rule_svolume]
+appname = "dunstify"
+summary = "Spotify Volume"
+format = "<span font='Ubuntu-M 18'><b>%s  </b></span><span font='Ubuntu-M 20'>%b</span>"
