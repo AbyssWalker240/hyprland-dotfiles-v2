@@ -53,8 +53,8 @@ hl.window_rule({match = {class = "(steam)", title = ".+"},
 --                             Resets to tile
 hl.window_rule({match = {title = "(^Steam$)"},
     float = false,
-    pseudo = true,
-    size = "(monitor_w*0.5) (monitor_h*1)",
+    -- pseudo = true,
+    -- size = "(monitor_w*0.5) (monitor_h*1)",
 })
 
 -- Games
