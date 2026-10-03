@@ -118,10 +118,12 @@ hl.bind("SUPER + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("$HOME/.local/bin/scripts/hyprland-utils/volume.sh up"), {locked = true, repeating = true})
 hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("$HOME/.local/bin/scripts/hyprland-utils/volume.sh down"),  {locked = true, repeating = true})
-hl.bind("XF86AudioMute", hl.dsp.exec_cmd("pavucontrol"), {locked = true, repeating = true})
+hl.bind("XF86AudioMute", hl.dsp.exec_cmd("pavucontrol"), {locked = true})
 
 -- Playerctl
 hl.bind("XF86AudioNext", hl.dsp.exec_cmd("playerctl -p spotify,spotify_player next"), {locked = true})
 hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl -p spotify,spotify_player play-pause"), {locked = true})
 hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl -p spotify,spotify_player play-pause"), {locked = true})
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl -p spotify,spotify_player previous"), {locked = true})
+hl.bind("SUPER + f11", hl.dsp.exec_cmd("$HOME/.local/bin/scripts/hyprland-utils/svolume.sh down"), {repeating = true})
+hl.bind("SUPER + f12", hl.dsp.exec_cmd("$HOME/.local/bin/scripts/hyprland-utils/svolume.sh up"), {repeating = true})

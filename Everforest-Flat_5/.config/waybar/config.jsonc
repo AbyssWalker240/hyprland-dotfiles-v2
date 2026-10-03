@@ -4,7 +4,7 @@
     "height": 32,
     "modules-left": ["custom/powermenu","custom/sep","ext/workspaces","hyprland/submap"],   /* SEE NOTE BELOW ABOUT WORKSPACES */
     "modules-center": ["hyprland/window","custom/maximized-indicator"],
-    "modules-right": ["custom/spotify-icon","custom/spotify-title","custom/spotify-artist","custom/spotify-prev","custom/spotify-playpause","custom/spotify-next","custom/spotify-sep","custom/wlsun-icon","custom/wlsun-status","custom/sep","custom/volume-icon","custom/volume","custom/sep","custom/clock-icon","clock"],
+    "modules-right": ["custom/spotify-icon","custom/spotify-title","custom/spotify-artist","custom/spotify-prev","custom/spotify-playpause","custom/spotify-next","custom/spotify-vol-icon","custom/spotify-vol","custom/spotify-sep","custom/wlsun-icon","custom/wlsun-status","custom/sep","custom/volume-icon","custom/volume","custom/sep","custom/clock-icon","clock"],
 
     "ext/workspaces": {           /* USING THIS WORKSPACES MODULE UNTIL HYPRLAND SPECIFIC ONE WORKS, not like it matters */
         "on-click": "activate",
@@ -92,6 +92,9 @@
         "on-scroll-up": "wpctl set-volume @DEFAULT_SINK@ 5%+",
         "on-scroll-down": "wpctl set-volume @DEFAULT_SINK@ 5%-"
     },
+
+
+    
     "custom/spotify-title": {
         "exec": "~/.local/bin/scripts/waybar-utils/spotify.sh title",
         "interval": 1,
@@ -130,11 +133,28 @@
         "on-click": "hyprctl dispatch 'hl.dsp.focus({workspace = \"3\"})'",
         "tooltip": false
     },
+    "custom/spotify-vol-icon": {
+        "exec": "~/.local/bin/scripts/waybar-utils/spotify.sh vol-icon",
+        "interval": 1,
+        "tooltip": false,
+        "on-scroll-up": "playerctl -p spotify volume 0.05+",
+        "on-scroll-down": "playerctl -p spotify volume 0.05-",
+    },
+    "custom/spotify-vol": {
+        "exec": "~/.local/bin/scripts/waybar-utils/spotify.sh vol",
+        "interval": 1,
+        "tooltip": false,
+        "on-scroll-up": "playerctl -p spotify volume 0.05+",
+        "on-scroll-down": "playerctl -p spotify volume 0.05-",
+    },
     "custom/spotify-sep": {
         "exec": "~/.local/bin/scripts/waybar-utils/spotify.sh sep",
         "interval": 1,
         "tooltip": false
     },
+
+
+    
     "custom/wlsun-icon": {
         "format": " \u25d0 ",
         "tooltip": false

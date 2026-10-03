@@ -52,7 +52,7 @@ tooltip {
     color: #a7c080;
 }
 
-#mode, #clock, #battery, #custom-volume, #custom-wlsun-status { 
+#mode, #clock, #battery, #custom-volume, #custom-wlsun-status, #custom-spotify-vol { 
     padding: 0 10px;
     color: #d3c6aa;
     background: #272e33;
@@ -122,12 +122,16 @@ tooltip {
     font-size: 22;
 }
 
-#custom-clock-icon, #custom-volume-icon, #custom-spotify-icon, #custom-wlsun-icon {
+#custom-clock-icon, #custom-volume-icon, #custom-spotify-icon, #custom-wlsun-icon, #custom-spotify-vol-icon {
     padding: 0px;
     color: #d699b6;
     background: #272e33;
     border-bottom: 3px solid #495156;
     border-radius: 0;
+}
+
+#custom-spotify-vol-icon {
+    padding-left: 5px;
 }
 
 #custom-spotify-title {

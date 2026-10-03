@@ -4,10 +4,12 @@ if ! playerctl -p spotify,spotify_player status > /dev/null; then
   exit 1
 fi
 
-TITLE="$(playerctl -p spotify,spotify_player metadata title)"
-ARTIST="$(playerctl -p spotify,spotify_player metadata artist)"
+TITLE="$(playerctl -p spotify metadata title)"
+ARTIST="$(playerctl -p spotify metadata artist)"
 
-STATUS="$(playerctl -p spotify,spotify_player status)"
+VOLUME="$(awk -v n="$(playerctl -p spotify volume)" 'BEGIN { printf "%.0f%%\n", n * 100 }')"
+
+STATUS="$(playerctl -p spotify status)"
 
 function playpause() {
   if [ "$STATUS" = "Paused" ]; then
@@ -35,6 +37,12 @@ case "$1" in
     ;;
   "icon")
     echo -e " \uf1bc "
+    ;;
+  "vol-icon")
+    echo -e " \uf028 "
+    ;;
+  "vol")
+    echo "$VOLUME"
     ;;
   "sep")
     echo "|"
