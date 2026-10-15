@@ -11,6 +11,7 @@ hl.bind("SUPER + x", hl.dsp.exec_cmd(browser))
 hl.bind("SUPER + v", hl.dsp.exec_cmd(clipboard))
 hl.bind("SUPER + CONTROL + r", hl.dsp.exec_cmd(reload))
 hl.bind("SUPER + b", hl.dsp.exec_cmd("pkill -SIGUSR1 waybar"))
+hl.bind("SUPER +l", hl.dsp.exec_cmd("systemctl suspend"))
 
 
 -- LAUNCHER MODE
